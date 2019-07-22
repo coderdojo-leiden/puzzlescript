@@ -56,3 +56,4 @@ Bijvoorbeeld:
 - Het is ook al gebruikt door veel anderen. De maker van “A good snowman…” heeft zijn spel eerst in PuzzleScript ontworpen voor hij een mooie uitvoering gemaakt heeft.
 - PuzzleScript heeft maar hele eenvoudige graphics: voor elk vakje kun je maar 5x5 pixels doen. Dat is expres, zodat je maar weinig tijd aan de graphics hoeft te besteden. Het gaat om het uitproberen van je idee.
 
+## Ga nu zelf [aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md). Succes!

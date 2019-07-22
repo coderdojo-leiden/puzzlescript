@@ -47,3 +47,4 @@ De tweede regel kun je lezen als "Als drie kistjes op een rij staan, vervang ze 
 - Waarvoor dient het woordje `late` in de tweede regel? Probeer het eens weg te halen en kijk wat er gebeurt als je drie kistjes op een rij zet.
   <details><summary>HINT</summary>Zonder het woordje <code>late</code> win je niet direct als je drie kistjes op een rij zet, maar pas als je nog een stap doet.</details>
 
+## Wil je de kleuren of plaatjes aanpassen? Ga door naar [de volgende stap! >>](3-kleuren-en-plaatjes.md)

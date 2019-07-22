@@ -58,3 +58,4 @@ Zie je hoe de tekens overeenkomen met de muren, kistjes en de speler? En waar st
 - Wat gebeurt er als er twee keer een P in het level staat?
 - Je kunt ook instructies aan de speler tonen aan het begin of tussen de levels. Zet daarvoor regels die beginnen met het woord `message ` (boodschap), gevolgd door wat je aan de speler wil tonen.
 
+## Ben je benieuwd hoe je de regels van het spel kunt veranderen? Ga dan door naar [de volgende stap! >>](2-maak-je-eigen-regels.md)

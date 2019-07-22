@@ -107,3 +107,5 @@ Je kunt vast zelf nog meer voorwerpen en regels bedenken om een leuk puzzelspel 
 - Maak een voorwerp `Schaap`. De `Speler` is de herdershond; zodra die naast een schaap staat, vlucht het schaap een vakje weg van de speler. Doel is weer om drie schapen op een rij te krijgen. (als voor een regel een vakje per se leeg moet zijn, gebruik dan `no Object`)
   <details><summary>HINT</summary><code>[ Speler | Schaap | no Object ] -> [ Speler | | Schaap ]</code></details>
 - Maak een spel waarbij er twee `Speler`s per level zijn. Als twee spelers elkaar raken, verdwijnen ze en kun je het level niet meer oplossen. Je moet het level dus oplossen (bijv. 3 kistjes op een rij krijgen) zonder de spelers elkaar te laten raken.
+
+## Is dat alles wat je met PuzzleScript kan? [Nee, er is nog veel meer! >>](8-er-kan-nog-veel-meer.md)

@@ -38,3 +38,4 @@ Deze kleurnamen kun je gebruiken: `black`, `white`, `lightgray`, `gray`, `darkgr
 ### Wat je kunt proberen ###
 - Pas de kleuren of de 5x5 pixel plaatjes aan zoals jij wilt.
 
+## Als je je werk niet kwijt wilt raken, bekijk dan snel [de volgende stap! >>](4-sla-je-werk-op.md)

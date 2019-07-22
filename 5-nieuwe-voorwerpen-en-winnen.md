@@ -48,3 +48,4 @@ Dit betekent "geen Kistje", oftewel: je wint het level als alle kistjes verdwene
   <details><summary>HINT1</summary>Je kunt een regel maken die de speler laat verdwijnen als die tussen twee kistjes staat. Pas hiervoor de tweede regel aan.</details>
   <details><summary>HINT2</summary>Je moet ook nog de winconditie aanpassen zodat je wint als er geen <code>Speler</code> meer is.</details>
 
+## Wat als je zelf geluiden in het spel wilt? Daarover gaat [de volgende stap! >>](6-geluid.md)

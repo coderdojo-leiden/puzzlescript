@@ -41,3 +41,4 @@ Let op: als je nog wijzigingen maakt aan een spel dat je hebt geSHAREd, moet je 
 
 Het is ook mogelijk om je spel op te slaan zodat je het kunt spelen zonder met internet verbonden te zijn. Druk hiervoor op EXPORT. Je downloadt een HTML-bestand waar het hele spel in zit. Dit bestand kun je alleen niet makkelijk meer wijzigen, dus als je nog verder wilt werken aan het spel, kun je beter een van de bovenstaande manieren gebruiken.
 
+## Kun je ook nieuwe voorwerpen toevoegen aan het spel? Jazeker! Kijk maar bij [de volgende stap! >>](5-nieuwe-voorwerpen-en-winnen.md)

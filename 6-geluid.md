@@ -59,3 +59,4 @@ Je kunt ook `SFX1`, `SFX2`, etc. gebruiken als je meer geluiden aan regels wilt 
 
 Alle mogelijkheden van geluiden vind je [hier](https://www.puzzlescript.net/Documentation/sounds.html) (in het Engels).
 
+## Een level waar je je eigen naam moet maken? Check [de volgende stap! >>](7-een-woord-vormen.md)
