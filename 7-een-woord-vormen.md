@@ -106,8 +106,8 @@ Je kunt vast zelf nog meer voorwerpen en regels bedenken om een leuk puzzelspel 
 
 - Voeg voorwerpen `Sleutel` en `Schatkist` toe. De speler kan de sleutel duwen net als een kistje. Als de sleutel naast de schatkist staat, gaat de schatkist open (verandert in een muntje). Alle schatkisten moeten geopend worden om het level te winnen.
 - Maak schuifbare voorwerpen met verschillende kleuren, bijvoorbeeld en rode en een blauwe ballon. Als een rode ballon een blauwe ballon raakt, wordt de blauwe ballon ook rood. Het doel is om alle ballonnen rood te maken.
-- Maak een voorwerp `Schaap`. De `Speler` is de herdershond; zodra die naast een schaap staat, vlucht het schaap een vakje weg van de speler. Doel is weer om drie schapen op een rij te krijgen. (als voor een regel een vakje per se leeg moet zijn, gebruik dan `no Voorwerp`)
-  <details><summary>HINT</summary><code>[ Speler | Schaap | no Object ] -> [ Speler | | Schaap ]</code></details>
+- Maak een voorwerp `Schaap`. De `Speler` is de herdershond; zodra die naast een schaap staat, vlucht het schaap een vakje weg van de speler. Doel is weer om drie schapen op een rij te krijgen. (als voor een regel een vakje per se leeg moet zijn, gebruik dan `no Voorwerp` of `no Object`)
+  <details><summary>HINT</summary><code>[ Speler | Schaap | no Voorwerp ] -> [ Speler | | Schaap ]</code></details>
 - Maak een spel waarbij er twee `Speler`s per level zijn. Als twee spelers elkaar raken, verdwijnen ze en kun je het level niet meer oplossen. Je moet het level dus oplossen (bijv. 3 kistjes op een rij krijgen) zonder de spelers elkaar te laten raken.
 
 ## Is dat alles wat je met PuzzleScript kan? [Nee, er is nog veel meer! >>](8-er-kan-nog-veel-meer.md)
