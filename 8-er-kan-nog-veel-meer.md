@@ -123,7 +123,7 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
   <dd>Ja, zie <a href="https://stuartspixelgames.com/2017/04/06/how-to-do-animation-in-puzzlescript/">hier.</a></dd>
 
   <dt>Kun je real-time spelletjes maken in plaats van turn-based?</dt>
-  <dd>Ja, zie [hier](https://www.puzzlescript.net/Documentation/realtime.html).</a></dd>
+  <dd>Ja, zie <a href="https://www.puzzlescript.net/Documentation/realtime.html">hier</a>.</dd>
 
   <dt>Kan je een 'vijand' maken die naar de speler toe beweegt zodra hij die ziet?</dt>
   <dd><code>[ Speler | ... | no Object | Vijand ] -> [ Speler | ... | Vijand | ]</code></dd>
