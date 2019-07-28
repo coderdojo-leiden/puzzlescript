@@ -13,6 +13,8 @@
 
 Nu je een aantal dingen hebt aangepast, wil je jouw spel natuurlijk niet zomaar kwijtraken. Gelukkig kun je in PuzzleScript je werk op een paar manieren opslaan. Mogelijkheid 1 en 2 zijn het makkelijkst.
 
+<img src="images/puzzlescript-header-save.png" />
+
 ## 1 - Lokaal opslaan (SAVE)
 
 Klik op SAVE links bovenaan de pagina om je werk lokaal op te slaan. Dat wil zeggen dat het op deze laptop in deze browser bewaard wordt. Het is verstandig om dit regelmatig te doen, zodat je geen werk kwijtraakt als bijvoorbeeld de batterij van de laptop leeg is. 

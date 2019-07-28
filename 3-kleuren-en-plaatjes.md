@@ -13,7 +13,7 @@
 
 ## Kies je kleuren en teken (hele kleine) plaatjes
 
-PuzzleScript ziet er heel eenvoudig uit: elk vakje heeft maar 5 x 5 pixels. Dat is expres, omdat het belangrijker is om snel ideeen uit te proberen dan om het direct mooi te maken. Als je helemaal tevreden bent met je ontwerp, kun je het uitwerken in een andere programmeertaal met mooie graphics.
+PuzzleScript ziet er heel eenvoudig uit: elk vakje heeft maar 5 x 5 pixels. Dat is expres, omdat het belangrijker is om snel idee&euml;n uit te proberen dan om het direct mooi te maken. Als je helemaal tevreden bent met je ontwerp, kun je het uitwerken in een andere programmeertaal met mooie graphics, animaties, geluid en muziek.
 
 Natuurlijk is het wel belangrijk dat je in PuzzleScript duidelijk ziet wat wat is, anders wordt testen wel erg moeilijk. Daarom kun je simpele plaatjes maken in het `OBJECTS` (voorwerpen) gedeelte.
 
@@ -29,6 +29,10 @@ darkgray brown lightblue blue
 .333.
 .3.3.
 ```
+
+In het spel ziet dit er zo uit:
+
+<img src="images/sprite-player.png" alt="Speler-sprite" />
 
 Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `Speler`, gevolgd door de letter die je hiervoor wilt gebruiken in je levels (`S`). De tweede regel is optioneel; alles wat tussen haakjes staat is commentaar in PuzzleScript. Op de volgende regel kun je een aantal kleuren zetten met spaties ertussen. Daarna volgen vijf regels met 5 tekens per regel die de pixels van het plaatje vormen. Daarbij is `0` de eerste kleur, `1` de tweede, enzovoorts. `.` betekent "geen kleur".
 

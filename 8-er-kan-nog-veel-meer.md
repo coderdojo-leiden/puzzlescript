@@ -13,9 +13,15 @@
 
 ## Leveleditor
 
+<img src="images/puzzlescript-header-leveleditor.png" />
+
 Er zit ook een leveleditor ingebouwd in PuzzleScript. Klik op LEVEL EDITOR bovenin om hem te activeren. Je kunt je level dan in het spel bewerken.
 
-Als je tevreden bent over je level, moet je nog wel op het S-knopje klikken boven je level. Onder je level verschijnt dan de code voor het level. Deze moet je zelf kopi&euml;ren en plakken in het `LEVELS` gedeelte van de code, anders worden je wijzigingen niet opgeslagen!
+<img src="images/leveleditor.png" />
+
+Bovenaan staan alle voorwerpen in het spel. Klik op een voorwerp en dan in het level om dat voorwerp te plaatsen. Rechtsklik om een voorwerp weer te verwijderen.
+
+LET OP: als je tevreden bent over je level, moet je nog wel op het S-knopje klikken, links boven je level. Onder je level verschijnt dan de code voor het level. Deze moet je zelf kopi&euml;ren en plakken in het `LEVELS` gedeelte van de code, anders worden je wijzigingen niet opgeslagen!
 
 ## Extra opties
 

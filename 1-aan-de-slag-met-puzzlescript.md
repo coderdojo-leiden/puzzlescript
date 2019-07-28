@@ -19,6 +19,8 @@ Aan de linkerkant zie je de code van het project. Het lijkt misschien ingewikkel
 
 Rechtsboven kun je het spel testen. Klik bovenin op RUN om te (her)starten en druk op de X-toets om het spel te starten.
 
+<img src="images/puzzlescript-header-run.png" />
+
 Je bestuurt een figuurtje met de pijltjestoetsen. Als je tegen een kistje aanloopt, duw je het een vakje verder. Je kunt maar 1 kistje tegelijk duwen.
 
 Probeer maar om drie kistjes op een rij te krijgen (naast elkaar of boven elkaar). Als dit lukt, verdwijnen ze. Als alle kistjes verdwenen zijn, ga je naar het volgende level.
@@ -44,12 +46,18 @@ LEVELS
 #######
 ```
 
-Klik nu op "RUN" bovenaan de pagina om je code te controleren en het spel opnieuw te starten. Selecteer in het gedeelte rechtsboven de optie "new game" (met pijltje omhoog) en druk op X. Nu speel je het level wat je net hebt toegevoegd.
+Klik nu op "RUN" bovenaan de pagina om je code te controleren en het spel opnieuw te starten.
+
+Selecteer in het gedeelte rechtsboven de optie "new game" (met pijltje omhoog) en druk op X. Nu speel je het level wat je net hebt toegevoegd.
+
+<img src="images/titlescreen-new-game.png" width="550" />
 
 Zie je hoe de tekens overeenkomen met de muren, kistjes en de speler? En waar staat de punt (.) voor?
 
+<img src="images/new-level.png" />
+
 Kun je het level oplossen?
-<details><summary>HINT1</summary>Schuif het bovenste kistje helemaal naar rechts. Schuif dan het kistje linksonder 1 vakje naar boven en dan helemaal naar rechts.</details>
+<details><summary>HINT</summary>Schuif het bovenste kistje helemaal naar rechts. Schuif dan het kistje linksonder 1 vakje naar boven en dan helemaal naar rechts.</details>
 
 ### Tips
 - Wil je terug naar het titelscherm terwijl je een level aan het spelen bent, bijvoorbeeld om overnieuw te beginnen? Druk op Esc.
