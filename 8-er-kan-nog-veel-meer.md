@@ -75,7 +75,7 @@ Hier zijn nog een aantal andere hele knappe PuzzleScript-spellen die niet in de 
   - [Make friends with every cat](https://w.itch.io/herding-cats)
   - [Islands](https://rosden.itch.io/islands)
 
-Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op https://www.increpare.com/
+Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op [zijn website](https://www.increpare.com/).
 
 
 ## Meer informatie

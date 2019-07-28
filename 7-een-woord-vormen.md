@@ -77,7 +77,7 @@ Natuurlijk willen we niet dat drie *letters* op een rij ook altijd verdwijnen, d
 late [ GewoonKistje | GewoonKistje | GewoonKistje ] -> [ | | ]
 ```
 
-Tot slot willen we zorgen dat de vier letters van het woord `CODE` verdwijnen als ze in de juiste volgorde gezet worden. We kunnen hiervoor de regel voor drie kistjes kopi&euml;ren en aanpassen. Lukt het je om de regel zelf aan te passen? Als het niet lukt, bekijk dan de hint.
+Tot slot willen we zorgen dat de vier letters van het woord `CODE` verdwijnen (of veranderen in muntjes) als ze in de juiste volgorde gezet worden. We kunnen hiervoor de regel voor drie kistjes kopi&euml;ren en aanpassen. Lukt het je om de regel zelf aan te passen? Als het niet lukt, bekijk dan de hint.
 
 <details><summary>HINT</summary><code>late [ LetterC | LetterO | LetterD | LetterE ] -> [ | | | ]
 </code></details>
