@@ -57,7 +57,7 @@ Zie je hoe de tekens overeenkomen met de muren, kistjes en de speler? En waar st
 <img src="images/new-level.png" />
 
 Kun je het level oplossen?
-<details><summary>HINT</summary>Schuif het bovenste kistje helemaal naar rechts. Schuif dan het kistje linksonder 1 vakje naar boven en dan helemaal naar rechts.</details>
+<details><summary>KLIK HIER VOOR EEN HINT</summary>Schuif het bovenste kistje helemaal naar rechts. Schuif dan het kistje linksonder 1 vakje naar boven en dan helemaal naar rechts.</details>
 
 ### Tips
 - Wil je terug naar het titelscherm terwijl je een level aan het spelen bent, bijvoorbeeld om overnieuw te beginnen? Druk op Esc.
