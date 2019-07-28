@@ -4,7 +4,7 @@
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
-- [5 - Nieuwe voorwerpen-en-winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)
@@ -53,7 +53,8 @@ We willen dat al deze letters zich gedragen als een `Kistje`. Om het makkelijk v
 
 ```
 GewoonKistje @
-White Gray DarkGray Black
+(Een kistje dat de speler kan duwen)
+White Gray DarkGray
 00001
 01112
 01112
@@ -61,23 +62,24 @@ White Gray DarkGray Black
 12222
 ```
 
-En dan voegen we deze regel to aan `LEGEND`:
+En dan voegen we deze regels toe bovenaan `LEGEND`:
 
 ```
+(Alle voorwerpen die je kunt schuiven)
 Kistje = GewoonKistje or LetterC or LetterO or LetterD or LetterE
 ```
 
-Hiermee hebben we een groep voorwerpen gemaakt die `Kistje` heet en `GewoonKistje` plus onze `Letter`s bevat. Omdat onze bestaande regels allemaal `Kistje` gebruiken, werken ze nu voor deze hele groep voorwerpen.
+Hiermee hebben we een groep voorwerpen gemaakt die `Kistje` heet en `GewoonKistje` plus onze `Letter`s bevat. Omdat onze bestaande regels allemaal `Kistje` gebruiken, werken ze nu voor deze hele groep "schuifbare voorwerpen".
 
-Natuurlijk willen we niet dat drie letters op een rij altijd direct verdwijnen, dus moeten we wel die regel aanpassen zodat die alleen werkt voor `GewoonKistje`:
+Natuurlijk willen we niet dat drie *letters* op een rij ook altijd verdwijnen, dus moeten we wel die regel aanpassen zodat die alleen werkt voor `GewoonKistje`:
 
 ```
-late [ GewoonKistje | GewoonKistje | GewoonKistje ] -> [ | | ] SFX0
+late [ GewoonKistje | GewoonKistje | GewoonKistje ] -> [ | | ]
 ```
 
-Tot slot willen we zorgen dat de vier letters van het woord `CODE` verdwijnen als ze in de juiste volgorde gezet worden. Lukt het je om de regel zelf aan te passen? Als het niet lukt, bekijk dan de hint.
+Tot slot willen we zorgen dat de vier letters van het woord `CODE` verdwijnen als ze in de juiste volgorde gezet worden. We kunnen hiervoor de regel voor drie kistjes kopi&euml;ren en aanpassen. Lukt het je om de regel zelf aan te passen? Als het niet lukt, bekijk dan de hint.
 
-<details><summary>HINT</summary><code>late [ LetterC | LetterO | LetterD | LetterE ] -> [ | | | ] SFX0
+<details><summary>HINT</summary><code>late [ LetterC | LetterO | LetterD | LetterE ] -> [ | | | ]
 </code></details>
 
 Test of alles goed werkt door een level te ontwerpen waarin je de letters C, O, D en E tot een woord moet vormen. Bijvoorbeeld:
@@ -86,8 +88,8 @@ Test of alles goed werkt door een level te ontwerpen waarin je de letters C, O, 
 #########
 #.......#
 #.S.e...#
-#..doc..#
-#......##
+#..c.d..#
+#...o..##
 #.....##.
 #######..
 ```
@@ -104,7 +106,7 @@ Je kunt vast zelf nog meer voorwerpen en regels bedenken om een leuk puzzelspel 
 
 - Voeg voorwerpen `Sleutel` en `Schatkist` toe. De speler kan de sleutel duwen net als een kistje. Als de sleutel naast de schatkist staat, gaat de schatkist open (verandert in een muntje). Alle schatkisten moeten geopend worden om het level te winnen.
 - Maak schuifbare voorwerpen met verschillende kleuren, bijvoorbeeld en rode en een blauwe ballon. Als een rode ballon een blauwe ballon raakt, wordt de blauwe ballon ook rood. Het doel is om alle ballonnen rood te maken.
-- Maak een voorwerp `Schaap`. De `Speler` is de herdershond; zodra die naast een schaap staat, vlucht het schaap een vakje weg van de speler. Doel is weer om drie schapen op een rij te krijgen. (als voor een regel een vakje per se leeg moet zijn, gebruik dan `no Object`)
+- Maak een voorwerp `Schaap`. De `Speler` is de herdershond; zodra die naast een schaap staat, vlucht het schaap een vakje weg van de speler. Doel is weer om drie schapen op een rij te krijgen. (als voor een regel een vakje per se leeg moet zijn, gebruik dan `no Voorwerp`)
   <details><summary>HINT</summary><code>[ Speler | Schaap | no Object ] -> [ Speler | | Schaap ]</code></details>
 - Maak een spel waarbij er twee `Speler`s per level zijn. Als twee spelers elkaar raken, verdwijnen ze en kun je het level niet meer oplossen. Je moet het level dus oplossen (bijv. 3 kistjes op een rij krijgen) zonder de spelers elkaar te laten raken.
 

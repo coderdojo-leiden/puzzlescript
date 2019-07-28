@@ -4,7 +4,7 @@
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
-- [5 - Nieuwe voorwerpen-en-winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)
@@ -24,12 +24,23 @@ Voorwerp = Muur or Speler or Kistje or Muntje
 ("or" is Engels voor "of", dus eigenlijk staat er "Een `Voorwerp` is een `Muur`, `Speler`, `Kistje` of `Muntje`")
 
 ### Wat je kunt proberen ###
-- Voeg een nieuw voorwerp toe, bijvoorbeeld `Muntje`. Kies een of meer kleuren en maak er een 5x5 pixel plaatje bij.
-- Zorg dat er een letter of teken bij je nieuwe voorwerp staat, net als bijv. de `S` achter `Speler`. Gebruik dit teken om het voorwerp aan een level toe te voegen en kijk het of werkt.
+- Voeg een nieuw voorwerp toe, bijvoorbeeld `Muntje`. Kies een of meer kleuren en maak er een 5x5 pixel plaatje bij. Zorg dat er een letter of teken bij je nieuwe voorwerp staat, net als bijv. de `S` achter `Speler`. Gebruik dit teken om het voorwerp aan een level toe te voegen.<br/>
+  Vergeet niet om het ook toe te voegen bij de `Voorwerp = Muur or Speler or Kistje` regel.<br/>
+  Test of je nieuwe voorwerp in het level te zien is.
+  <details><summary>HINT</summary>Je voorwerp zou er bijvoorbeeld zo uit kunnen zien:<br/><code>
+  Muntje M<br/>
+  (Een muntje dat je kunt oppakken)<br/>
+  yellow<br/>
+  .....<br/>
+  .000.<br/>
+  .000.<br/>
+  .000.<br/>
+  .....<br/>
+  </code></details>
 - Zonder extra regels gedraagt je nieuwe voorwerp zich hetzelfde als een `Muur`. Kun je een regel toevoegen die zegt "Als de speler tegen een muntje aanloopt, verdwijnt het muntje"?
   <details><summary>HINT</summary>Maak een regel die lijkt op de kistjes-duwen regel, maar vervang <code>Kistje</code> door <code>Muntje</code> en laat Muntje rechts van het pijltje helemaal weg.</details>
 - Stel dat je drie `Kistje`s op een rij elk in een `Muntje` wilt veranderen in plaats van ze te laten verdwijnen. Heb je een idee hoe je dat kunt aanpakken? Probeer of het werkt.
-  <details><summary>HINT</summary>Pas het gedeelte rechts van het pijltje in de tweede regel aan.</details>
+  <details><summary>HINT</summary>Pas het gedeelte rechts van het pijltje in de tweede regel aan zodat het geen lege vakjes maar vakjes met een <code>Muntje</code> worden.</details>
 
 ## Bepaal hoe je wint
 
@@ -44,8 +55,8 @@ Dit betekent "geen Kistje", oftewel: je wint het level als alle kistjes verdwene
 ### Wat je kunt proberen ###
 - Kun je zorgen dat je alleen wint als niet alleen alle kistjes weg zijn, maar je ook alle muntjes hebt opgepakt?
   <details><summary>HINT</summary>Je kunt een tweede eis toevoegen aan <code>WINCONDITIONS</code> die zegt dat er naast kistjes ook geen muntjes meer mogen zijn.</details>
-- Stel dat we het spel willen veranderen zodat je wint als je tussen twee kistjes in staat. Hoe zou je dat kunnen doen?
-  <details><summary>HINT1</summary>Je kunt een regel maken die de speler laat verdwijnen als die tussen twee kistjes staat. Pas hiervoor de tweede regel aan.</details>
-  <details><summary>HINT2</summary>Je moet ook nog de winconditie aanpassen zodat je wint als er geen <code>Speler</code> meer is.</details>
+- Stel dat we het spel willen veranderen zodat je wint als je tussen twee muntjes in staat. Hoe zou je dat kunnen doen?
+  <details><summary>HINT1</summary>Je kunt een regel maken die de speler laat verdwijnen als die tussen twee muntjes staat. Pas hiervoor de tweede regel aan.</details>
+  <details><summary>HINT2</summary>Je moet ook nog de winconditie aanpassen zodat je wint als er geen <code>Speler</code> meer is. De regels dat er geen kistjes of muntjes meer mogen zijn, kunnen dan weg.</details>
 
 ## Wat als je zelf geluiden in het spel wilt? Daarover gaat [de volgende stap! >>](6-geluid.md)

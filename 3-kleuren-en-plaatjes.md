@@ -4,7 +4,7 @@
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
-- [5 - Nieuwe voorwerpen-en-winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)
@@ -21,6 +21,7 @@ In dit gedeelte bepaal je welke voorwerpen je spel heeft en hoe ze er uit zien. 
 
 ```
 Speler S
+(Het figuurtje dat je bestuurt)
 darkgray brown lightblue blue
 .000.
 .111.
@@ -29,7 +30,7 @@ darkgray brown lightblue blue
 .3.3.
 ```
 
-Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `Speler`, gevolgd door de letter die je hiervoor wilt gebruiken in je levels (`S`). Op de tweede regel kun je een aantal kleuren zetten met spaties ertussen. Daarna volgen vijf regels met 5 tekens per regel die de pixels van het plaatje vormen. Daarbij is `0` de eerste kleur, `1` de tweede, enzovoorts. `.` betekent "geen kleur".
+Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `Speler`, gevolgd door de letter die je hiervoor wilt gebruiken in je levels (`S`). De tweede regel is optioneel; alles wat tussen haakjes staat is commentaar in PuzzleScript. Op de volgende regel kun je een aantal kleuren zetten met spaties ertussen. Daarna volgen vijf regels met 5 tekens per regel die de pixels van het plaatje vormen. Daarbij is `0` de eerste kleur, `1` de tweede, enzovoorts. `.` betekent "geen kleur".
 
 (je kunt de laatste 5 regels ook weglaten, zoals bijv. bij `Achtergrond`. Dan krijg je alleen een gekleurd blokje te zien)
 

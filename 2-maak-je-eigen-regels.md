@@ -4,7 +4,7 @@
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
-- [5 - Nieuwe voorwerpen-en-winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)
@@ -22,7 +22,7 @@ De eerste regel zorgt ervoor dat de speler (Player) kistjes kan schuiven:
 
 De tweede regel zorgt ervoor dat drie kistjes op een rij verdwijnen:
 ```
-late [ Kistje | Kistje | Kistje ] -> [ | | ]
+late [ Kistje | Kistje | Kistje ] -> [        |        |        ]
 ```
 
 Zoals je ziet, heeft elke regel een pijltje (`->`) in het midden. Als PuzzleScript de situatie tegenkomt die links van het pijltje staat, vervangt hij die door wat rechts van het pijltje staat.
@@ -41,7 +41,8 @@ De tweede regel kun je lezen als "Als drie kistjes op een rij staan, vervang ze 
 - Begrijp je wat `>` betekent in de eerste regel? Wat gebeurt er als je de tweede `>` weghaalt (bij `Speler` rechts van het pijltje)?
   <details><summary>HINT</summary><code>&gt;</code> heeft met beweging te maken. <code>&gt; Speler</code> betekent hier in feite: een naar het kistje bewegende speler.</details>
 - Wat gebeurt er als je de eerste regel aanpast naar `[ > Speler | Kistje ] -> [ Kistje | Speler ]`? Lukt het je nu nog om drie kistjes op een rij krijgen?
-- Hoe zou je de eerste regel aan kunnen passen om kistjes niet te duwen, maar te trekken?   <details><summary>HINT</summary>Als <code>&gt; Speler</code> betekent "een speler die naar het kistje beweegt", hoe zou je dan "een speler die van het kistje af beweegt" zeggen?</details>
+- Hoe zou je de eerste regel aan kunnen passen om kistjes niet te duwen, maar te trekken?
+  <details><summary>HINT</summary>Als <code>&gt; Speler</code> betekent "een speler die naar het kistje beweegt", hoe zou je dan "een speler die van het kistje af beweegt" zeggen?</details>
 - Kun je het ook zo maken dat je kistjes kan duwen EN trekken?
   <details><summary>HINT</summary>Je kunt de eerste regel kopieren voor je 'm aanpast zoals bij de vorige vraag.</details>
 - Waarvoor dient het woordje `late` in de tweede regel? Probeer het eens weg te halen en kijk wat er gebeurt als je drie kistjes op een rij zet.

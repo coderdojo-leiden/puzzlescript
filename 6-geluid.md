@@ -4,7 +4,7 @@
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
-- [5 - Nieuwe voorwerpen-en-winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)

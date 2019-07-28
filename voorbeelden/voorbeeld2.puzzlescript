@@ -1,0 +1,139 @@
+(
+    PUZZLESCRIPT VOORBEELD 2
+
+    We hebben een Muntje toegevoegd. Speler kan Muntje oppakken.
+    Als je drie Kistjes op een rij zet, veranderen ze in Muntjes.
+    Alle Kistjes en Muntjes moeten verdwenen zijn om het level uit te spelen.
+)
+
+
+(informatie over ons puzzelspel)
+title Mijn puzzelspel
+author jij
+homepage www.puzzlescript.net
+
+
+========
+OBJECTS (alle voorwerpen in ons spel, inclusief de speler)
+========
+
+Achtergrond .
+(Zo zien alle lege vakjes er uit)
+darkblue
+
+Muur #
+(Een vakje waar Speler en Kistje niet kunnen staan)
+darkgray darkbrown darkred
+01210
+10102
+21210
+02101
+12012
+
+Kistje @
+(Een kistje dat de speler kan duwen)
+white gray darkgray
+00001
+01112
+01112
+01112
+12222
+
+Speler S
+(Het figuurtje dat je bestuurt)
+darkgray brown lightblue blue
+.000.
+.111.
+22222
+.333.
+.3.3.
+
+Muntje M
+(Een muntje dat je kunt oppakken)
+yellow
+.....
+.000.
+.000.
+.000.
+.....
+
+
+=======
+LEGEND (hier kun je bijvoorbeeld groepen voorwerpen opgeven)
+=======
+
+(Dit zijn al onze voorwerpen)
+Voorwerp = Muur or Speler or Kistje or Muntje
+
+(dit is nodig zodat PuzzleScript weet wat onze Achtergrond en onze Speler is)
+Background = Achtergrond
+Player = Speler
+
+
+=======
+SOUNDS (geluiden)
+=======
+
+Kistje MOVE 975507
+EndLevel 84805900
+
+
+================
+COLLISIONLAYERS (de "lagen" van ons spel; je hoeft hier niets aan te veranderen)
+================
+
+Achtergrond
+Voorwerp
+
+
+======
+RULES (de regels van het spel)
+======
+
+(De Speler kan Kistjes duwen)
+[ > Speler | Kistje ] -> [ > Speler | > Kistje ]
+
+(De Speler kan een Muntje pakken)
+[ > Speler | Muntje ] -> [ > Speler |          ]
+
+(Drie Kistjes op een rij veranderen in Muntjes)
+late [ Kistje | Kistje | Kistje  ] -> [ Muntje | Muntje | Muntje ]
+
+
+==============
+WINCONDITIONS (wanneer win je een level?)
+==============
+
+(je wint als er geen Kistjes of Muntjes meer zijn)
+no Kistje
+no Muntje
+
+
+=======
+LEVELS (de puzzels die de speler moet oplossen)
+=======
+
+#######
+#S@...#
+#.....#
+#.@..@#
+#.....#
+#######
+
+message Kistjes veranderen in muntjes als je er drie op een rij zet!
+
+#####
+#S..#
+#.@@#
+#.@.#
+#####
+
+message Laat alle kistjes verdwijnen en pak alle muntjes!
+
+#########
+#S....@.#
+#.@@.@..#
+#.@...@##
+#########
+
+message Gefeliciteerd, je hebt gewonnen!

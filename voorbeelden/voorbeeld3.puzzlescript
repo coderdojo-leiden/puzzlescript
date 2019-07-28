@@ -1,0 +1,189 @@
+(
+    PUZZLESCRIPT VOORBEELD 3
+
+    We nu ook de letters C, O, D en E toegevoegd. Ze kunnen geduwd worden
+    net als Kistjes. Als je het woord CODE maakt, veranderen de vier letters
+    in Muntjes. Als je op X drukt terwijl je naast Kistje(s) staat, duw je ze
+    allemaal van je af.
+)
+
+
+(informatie over ons puzzelspel)
+title Mijn puzzelspel
+author jij
+homepage www.puzzlescript.net
+
+
+========
+OBJECTS (alle voorwerpen in ons spel, inclusief de speler)
+========
+
+Achtergrond .
+(Zo zien alle lege vakjes er uit)
+darkblue
+
+Muur #
+(Een vakje waar Speler en Kistje niet kunnen staan)
+darkgray darkbrown darkred
+01210
+10102
+21210
+02101
+12012
+
+GewoonKistje @
+(Een kistje dat de speler kan duwen)
+white gray darkgray
+00001
+01112
+01112
+01112
+12222
+
+Speler S
+(Het figuurtje dat je bestuurt)
+darkgray brown lightblue blue
+.000.
+.111.
+22222
+.333.
+.3.3.
+
+Muntje M
+(Een muntje dat je kunt oppakken)
+yellow
+.....
+.000.
+.000.
+.000.
+.....
+
+LetterC C
+Yellow Black
+01110
+10000
+10000
+10000
+01110
+
+LetterO O
+Blue Black
+01100
+10010
+10010
+10010
+01100
+
+LetterD D
+Green Black
+11100
+10010
+10010
+10010
+11100
+
+LetterE E
+Red Black
+11110
+10000
+11100
+10000
+11110
+
+=======
+LEGEND (hier kun je bijvoorbeeld groepen voorwerpen opgeven)
+=======
+
+(Alle voorwerpen die je kunt schuiven)
+Kistje = GewoonKistje or LetterC or LetterO or LetterD or LetterE
+
+(Dit zijn al onze voorwerpen)
+Voorwerp = Muur or Speler or Kistje or Muntje
+
+(dit is nodig zodat PuzzleScript weet wat onze Achtergrond en onze Speler is)
+Background = Achtergrond
+Player = Speler
+
+
+=======
+SOUNDS (geluiden)
+=======
+
+Kistje MOVE 975507
+EndLevel 84805900
+
+
+================
+COLLISIONLAYERS
+================
+
+Achtergrond
+Voorwerp
+
+
+======
+RULES (de regels van het spel)
+======
+
+(De Speler kan Kistjes duwen)
+[ > Speler | Kistje ] -> [ > Speler | > Kistje ]
+
+(Druk op ACTION (de X-toets) om Kistjes waar je naast staat te duwen)
+[ ACTION Speler | Kistje | no Voorwerp ] -> [ ACTION Speler | | Kistje ]
+
+(De Speler kan meerdere Kistjes tegelijk duwen)
+[ > Kistje | Kistje ] -> [ > Kistje | > Kistje ]
+
+(De Speler kan een Muntje pakken)
+[ > Speler | Muntje ] -> [ > Speler |          ]
+
+(Drie Kistjes op een rij veranderen in Muntjes)
+late [ GewoonKistje | GewoonKistje | GewoonKistje  ] -> [ Muntje | Muntje | Muntje ]
+
+RIGHT late [ LetterC | LetterO | LetterD | LetterE ] -> [ | | | ]
+
+==============
+WINCONDITIONS (wanneer win je een level?)
+==============
+
+(je wint als er geen Kistjes of Muntjes meer zijn)
+no Kistje
+no Muntje
+
+
+=======
+LEVELS (de puzzels die de speler moet oplossen)
+=======
+
+#########
+#.......#
+#.S.e...#
+#..c.d..#
+#...o..##
+#.....##.
+#######..
+
+#######
+#S@...#
+#.....#
+#.@..@#
+#.....#
+#######
+
+message Kistjes veranderen in muntjes als je er drie op een rij zet!
+
+#####
+#S..#
+#.@@#
+#.@.#
+#####
+
+message Laat alle kistjes verdwijnen en pak alle muntjes!
+
+#########
+#S....@.#
+#.@@.@..#
+#.@...@##
+#########
+
+message Gefeliciteerd, je hebt gewonnen!
