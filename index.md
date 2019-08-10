@@ -21,39 +21,42 @@ Je kunt als spelende de regels van het spel veranderen zodat je bijvoorbeeld doo
 ### A good snowman is hard to build
 Je kunt sneeuwballen van verschillende grootte rollen en opstapelen om sneeuwmannen te maken.
 
+De maker van dit spel heeft het eerst ontworpen in PuzzleScript.
+
 [ontwerp in PuzzleScript](https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745)
 
 <img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
 
-(Daarna als een volledig spel gebouwd)
+Toen hij zag dat het leuk was om te spelen, heeft hij een hele mooie versie gemaakt:
 
 <img alt="A good snowman is hard to build" src="images/AGoodSnowman_Animated_Demo.gif" height="400">
-
-### Meer voorbeelden
-
-- Block Faker https://droqen.itch.io/block-faker (zie ook PuzzleScript examples)
 
 ### VRAAG: Ken je nog meer van dit soort spellen? Of heb je zelf een leuk idee?
 
 ## VRAAG: Wat hebben deze spellen met elkaar gemeen?
 
-Bijvoorbeeld:
-- Je moet logisch nadenken om een puzzel op te lossen
-- Het speelveld bestaat uit vakjes
-- Er zijn muren en voorwerpen die kunnen bewegen, zoals kistjes, sneeuwballen of worstjes
-- Je bestuurt meestal 1 figuurtje
-- Je ziet het meestal van bovenaf (maar opzij kan ook)
-- Graphics zijn meestal vrij eenvoudig; daar draait het niet om
-- ...
+<details>
+<summary>Bijvoorbeeld:</summary>
+<ul>
+<li>Je moet logisch nadenken om een puzzel op te lossen</li>
+<li>Het speelveld bestaat uit vakjes</li>
+<li>Er zijn muren en voorwerpen die kunnen bewegen, zoals kistjes, sneeuwballen of worstjes</li>
+<li>Je bestuurt meestal 1 figuurtje</li>
+<li>Je ziet het meestal van bovenaf (maar opzij kan ook)</li>
+<li>Graphics zijn meestal vrij eenvoudig; daar draait het niet om</li>
+<li>...</li>
+</ul>
+</details>
 
 ## Hoe ontwerp je zo’n spel?
 
-- (terugverwijzen naar game design coderdojo)
-- Je hebt misschien veel leuke ideeën voor puzzelspellen.
-- Maar je weet pas of het een goed idee is als je het hebt uitgeprobeerd.
-- Als het veel werk is om een idee uit te proberen, kun je niet snel een hoop verschillende dingen proberen.
-- PuzzleScript is ontworpen om snel veel ideeën te kunnen proberen, door iemand die veel puzzelspelletjes gemaakt heeft.
-- Het is ook al gebruikt door veel anderen. De maker van “A good snowman…” heeft zijn spel eerst in PuzzleScript ontworpen voor hij een mooie uitvoering gemaakt heeft.
-- PuzzleScript heeft maar hele eenvoudige graphics: voor elk vakje kun je maar 5x5 pixels doen. Dat is expres, zodat je maar weinig tijd aan de graphics hoeft te besteden. Het gaat om het uitproberen van je idee.
+(terugverwijzen naar game design coderdojo)
+
+Je hebt misschien veel leuke ideeën voor puzzelspellen. Maar je moet een idee eerst uitproberen om te weten of het echt een goed idee is.
+
+Wie was er bij CoderDojo over game design? Toen hebben we al gezien dat het belangrijk is om snel een idee uit te proberen, en dat het op dat moment vooral belangrijk is of het leuk is om te spelen, en minder belangrijk hoe het er uitziet of klinkt.
+
+PuzzleScript ziet er heel eenvoudig uit, maar juist daardoor kun je snel ideeen uitproberen. Het is ontworpen door iemand die zelf ook heel veel puzzelspelletjes gemaakt heeft.
+
 
 ## Ga nu zelf [aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md). Succes!
