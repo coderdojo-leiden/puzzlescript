@@ -15,7 +15,7 @@ Dit programma beschrijft dus een puzzelspel, maar hoe werkt het? En hoe kunnen w
 
 De regels van het spel staan beschreven in de gedeeltes RULES. Daar zien we de regels die bepalen hoe kistjes in het spel zich gedragen:
 
-De eerste regel zorgt ervoor dat de speler (Player) kistjes kan schuiven:
+De eerste regel zorgt ervoor dat de speler kistjes kan schuiven:
 ```
 [ > Speler | Kistje ] -> [ > Speler | > Kistje  ]
 ```
@@ -33,7 +33,7 @@ De tweede regel kun je lezen als "Als drie kistjes op een rij staan, vervang ze 
 
 ### Tips: wijzigingen terugdraaien
 - Als je je PuzzleScript code aan het bewerken bent, kun je je laatste wijzigingen altijd ongedaan maken met Ctrl+Z.
-- Als je zorgt dat je je programma regelmatig opslaan (door SAVE te klikken of Ctrl+S te drukken), kun je ook terug naar eerdere opgeslagen versies door ze te selecteren bij de "Load" selectielijst bovenin.
+- Als je zorgt dat je je programma regelmatig opslaat (door SAVE te klikken of Ctrl+S te drukken), kun je ook terug naar eerdere opgeslagen versies door ze te selecteren bij de "Load" selectielijst bovenin.
 
 ### Wat je kunt proberen ###
 - Hoe zou je *vier* in plaats van drie kistjes op een rij kunnen laten verdwijnen?

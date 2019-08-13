@@ -23,7 +23,7 @@ Je kunt sneeuwballen van verschillende grootte rollen en opstapelen om sneeuwman
 
 De maker van dit spel heeft het eerst ontworpen in PuzzleScript.
 
-[ontwerp in PuzzleScript](https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745)
+<a href='https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745' target='_blank'>ontwerp in PuzzleScript</a>
 
 <img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
 

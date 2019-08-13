@@ -57,6 +57,6 @@ Je kunt ook `SFX1`, `SFX2`, etc. gebruiken als je meer geluiden aan regels wilt 
   <details><summary>HINT</summary>Verander de regel <code>Kistje Move 975507</code> in <code>SFX1 975507</code> en voeg nog een SFX2 toe en koppel deze aan de duw- en trekregels net zoals hierboven met SFX0.</details>
 - Speel een geluid als de speler probeert te bewegen of duwen maar het lukt niet (bijvoorbeeld omdat die tegen een muur aanloopt). Gebruik hiervoor in plaats van <code>Move</code> het woord <code>CantMove</code> ("can't move" = "kan niet bewegen").
 
-Alle mogelijkheden van geluiden vind je [hier](https://www.puzzlescript.net/Documentation/sounds.html) (in het Engels).
+Alle mogelijkheden van geluiden vind je <a href='https://www.puzzlescript.net/Documentation/sounds.html' target='_blank'>hier</a> (in het Engels).
 
 ## Een level waar je je eigen naam moet maken? Check [de volgende stap! >>](7-een-woord-vormen.md)

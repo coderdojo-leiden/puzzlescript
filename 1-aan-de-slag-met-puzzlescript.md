@@ -13,7 +13,7 @@
 
 ## Bekijk het voorbeeldspel
 
-Open het [voorbeeldproject](https://www.puzzlescript.net/editor.html?hack=e72bf94dcf4bad6eeb92ffa10ba5ea83). Dit is een simpel spelletje waarbij je kistjes kunt schuiven en moet proberen er drie op een rij te krijgen.
+Open het <a href='https://www.puzzlescript.net/editor.html?hack=e72bf94dcf4bad6eeb92ffa10ba5ea83' target='_blank'>voorbeeldproject</a>). Dit is een simpel spelletje waarbij je kistjes kunt schuiven en moet proberen er drie op een rij te krijgen.
 
 Aan de linkerkant zie je de code van het project. Het lijkt misschien ingewikkeld, maar we zullen het stap voor stap bekijken.
 

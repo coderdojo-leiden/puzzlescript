@@ -69,20 +69,20 @@ Misschien heb je bovenin al "Load example" zien staan. Bij PuzzleScript zitten e
 
 Hier zijn nog een aantal andere hele knappe PuzzleScript-spellen die niet in de lijst voorbeelden staan:
 
-  - [Pac-Man](https://www.puzzlescript.net/play.html?p=6847686)
-  - [Heroes of Sokoban](https://www.puzzlescript.net/play.html?p=6860122)
-  - [Dungeon Janitor](https://www.puzzlescript.net/play.html?p=6866423)
-  - [Make friends with every cat](https://w.itch.io/herding-cats)
-  - [Islands](https://rosden.itch.io/islands)
+  - <a href='https://www.puzzlescript.net/play.html?p=6847686' target='_blank'>Pac-Man</a>
+  - <a href='https://www.puzzlescript.net/play.html?p=6860122' target='_blank'>Heroes of Sokoban</a>
+  - <a href='https://www.puzzlescript.net/play.html?p=6866423' target='_blank'>Dungeon Janitor</a>
+  - <a href='https://w.itch.io/herding-cats' target='_blank'>Make friends with every cat</a>
+  - <a href='https://rosden.itch.io/islands' target='_blank'>Islands</a>
 
-Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op [zijn website](https://www.increpare.com/).
+Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op <a href='https://www.increpare.com/' target='_blank'>zijn website</a>.
 
 
 ## Meer informatie
 
-Klik op DOCS bovenin om de (Engelse) [documentatie](https://www.puzzlescript.net/Documentation/documentation.html) van PuzzleScript te bekijken. Hierin staan nog een hoop mogelijkheden die hier niet genoemd zijn.
+Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een hoop mogelijkheden die hier niet genoemd zijn.
 
-Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze [hier](https://stuartspixelgames.com/puzzle-script-tutorials/).
+Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.
 
 
 ## Vragen en antwoorden
@@ -90,7 +90,7 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
 <dl>
 
   <dt>Hoe worden PuzzleScript-regels precies uitgevoerd?</dt>
-  <dd>Zie <a href="https://www.puzzlescript.net/Documentation/executionorder.html">hier</a>. Korte samenvatting: regels worden een voor een zo vaak mogelijk toegepast. Zet <code>debug</code> en <code>verbose_logging</code> bovenin om precies te zien hoe het werkt.</dd>
+  <dd>Zie <a href="https://www.puzzlescript.net/Documentation/executionorder.html" target='_blank'>hier</a>. Korte samenvatting: regels worden een voor een zo vaak mogelijk toegepast. Zet <code>debug</code> en <code>verbose_logging</code> bovenin om precies te zien hoe het werkt.</dd>
 
   <dt>Hoe kun je meerdere kistjes tegelijk schuiven?</dt>
   <dd>Gebruik deze twee regels:<br/><code>
@@ -108,7 +108,7 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
   <code>[ Kistje Doel ] -> [ Doel ]</code></dd>
 
   <dt>Kun je knoppen maken die deuren openen?</dt>
-  <dd>Ja, zie bijvoorbeeld <a href="https://www.puzzlescript.net/editor.html?hack=6860122">Heroes of Sokoban</a>.</dd>
+  <dd>Ja, zie bijvoorbeeld <a href="https://www.puzzlescript.net/editor.html?hack=6860122" target='_blank'>Heroes of Sokoban</a>.</dd>
 
   <dt>Hoe kun je het zo maken dat een geduwd kistje doorbeweegt tot het tegen een muur botst?</dt>
   <dd>Zonder animatie (`Kistje` springt direct naar eindpunt):<br/>
@@ -120,16 +120,16 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
   </dd>
 
   <dt>Kun je animatie gebruiken?</dt>
-  <dd>Ja, zie <a href="https://stuartspixelgames.com/2017/04/06/how-to-do-animation-in-puzzlescript/">hier.</a></dd>
+  <dd>Ja, zie <a href="https://stuartspixelgames.com/2017/04/06/how-to-do-animation-in-puzzlescript/" target='_blank'>hier.</a></dd>
 
   <dt>Kun je real-time spelletjes maken in plaats van turn-based?</dt>
-  <dd>Ja, zie <a href="https://www.puzzlescript.net/Documentation/realtime.html">hier</a>.</dd>
+  <dd>Ja, zie <a href="https://www.puzzlescript.net/Documentation/realtime.html" target='_blank'>hier</a>.</dd>
 
   <dt>Kan je een 'vijand' maken die naar de speler toe beweegt zodra hij die ziet?</dt>
   <dd><code>[ Speler | ... | no Object | Vijand ] -> [ Speler | ... | Vijand | ]</code></dd>
 
   <dt>Kan je een knop maken die deuren opent als de speler of een kistje er op staat?</dt>
-  <dd>Ja, zie <a href="https://stuartspixelgames.com/2016/06/05/checking-multiple-conditions-in-puzzle-script/">hier.</a></dd>
+  <dd>Ja, zie <a href="https://stuartspixelgames.com/2016/06/05/checking-multiple-conditions-in-puzzle-script/" target='_blank'>hier.</a></dd>
 
   <dt>Kan je 4 kistjes laten verdwijnen als ze een vierkant vormen?</dt>
   <dd>Ja, maar dit is wat lastiger, omdat PuzzleScript-regels alleen op 1 rij of kolom werken. Je zou (op een andere laag) een tijdelijk object moeten aanmaken, bijv. <code>TweeKistjesBovenElkaar</code> dat betekent "dit vakje en het vakje eronder bevat een kistje" en dan een regel die checkt op twee <code>TweeKistjesBovenElkaar</code> objecten naast elkaar en er andere tijdelijke objecten van maakt, bijv. <code>VerdwijnendeKistjesBovenElkaar</code>. Als een van de laatste regels zou je alle tijdelijke objecten weer moeten verwijderen.</a></dd>

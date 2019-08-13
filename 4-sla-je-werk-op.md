@@ -33,7 +33,7 @@ Er zijn nog twee opslagmogelijkheden: SHARE en EXPORT. Die heb je misschien niet
 
 ## 3 - Delen (SHARE)
 
-Het is met PuzzleScript mogelijk om je puzzelspel op te slaan en te delen met anderen via GitHub. Je hebt hiervoor wel een (gratis) GitHub-account nodig (dat kun je [hier](https://github.com/join) aanvragen).
+Het is met PuzzleScript mogelijk om je puzzelspel op te slaan en te delen met anderen via GitHub. Je hebt hiervoor wel een (gratis) GitHub-account nodig (dat kun je <a href='https://github.com/join' target='_blank'>hier</a>) aanvragen).
 
 Klik op SHARE bovenin. PuzzleScript zegt dat je toestemming moet geven voor het delen. Klik op de link die rechtsonderin verschijnt en geef toestemming. Klik dan opnieuw op SHARE en PuzzleScript toont rechtsonderin twee links: een link naar de source code, voor als je er zelf verder mee wilt werken, en een link waar mensen je spel op volledig scherm kunnen spelen.
 
