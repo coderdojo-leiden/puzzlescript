@@ -25,7 +25,7 @@ Als je met je eigen laptop werkt, is SAVE de simpelste manier om je werk op te s
 
 Je kunt het hele PuzzleScript-programma natuurlijk naar jezelf mailen, of het opslaan in een bestand op een USB-stickje.
 
-Om het PuzzleScript-programma naar het klembord te kopi&euml;ren: klik op het programma en druk Ctrl+A (alles selecteren). Als het hele programma geselecteerd is, druk je op Ctrl+C (kopi&euml;ren). Daarna kun je het plakken (met Ctrl+V) in een mailtje of een leeg tekstbestand (in het programma Kladblok). (Als je op een Apple-laptop werkt, gebruik je Appeltje+A, Appeltje+C en Appeltje+V)
+Om het PuzzleScript-programma naar het klembord te kopi&euml;ren: klik op het programma en druk Ctrl+A (alles selecteren). Als het hele programma geselecteerd is, druk je op Ctrl+C (kopi&euml;ren). Daarna kun je het plakken (met Ctrl+V) in een mailtje of een leeg tekstbestand (in het programma Kladblok). (Als je op een Apple-laptop werkt, gebruik je Command+A, Command+C en Command+V)
 
 Als je volgende keer weer verder wilt, doe je het omgekeerde: je opent je mailtje of bestand met de code, selecteert alles, gaat naar PuzzleScript, verwijdert daar alle code, en plakt jouw eigen code.
 
