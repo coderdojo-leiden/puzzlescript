@@ -1,4 +1,8 @@
-# Logische puzzelspellen
+# Een spel gemaakt met PuzzleScript
+
+<img src="images/wat-gaan-we-maken-traag.gif" alt="Sokoban" height="400" />
+
+# Wat is een logisch puzzelspel?
 
 ## Voorbeelden
 
@@ -14,20 +18,12 @@ Je moet worstjes over grillplaten rollen om ze te bakken, maar ze niet laten ver
 <img alt="Stephen's Sausage Roll" src="images/stephens-sausage-roll.gif" height="400" />
 
 ### Baba is You
-Je kunt als spelenr de regels van het spel veranderen zodat je bijvoorbeeld door muren heen kunt lopen.
+Je kunt als speler de regels van het spel veranderen zodat je bijvoorbeeld door muren heen kunt lopen.
 
 <img alt="Baba is You" src="images/Baba_is_you_gameplay.gif" height="400" />
 
 ### A good snowman is hard to build
 Je kunt sneeuwballen van verschillende grootte rollen en opstapelen om sneeuwmannen te maken.
-
-De maker van dit spel heeft het eerst ontworpen in PuzzleScript.
-
-<a href='https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745' target='_blank'>ontwerp in PuzzleScript</a>
-
-<img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
-
-Toen hij zag dat het leuk was om te spelen, heeft hij een hele mooie versie gemaakt:
 
 <img alt="A good snowman is hard to build" src="images/AGoodSnowman_Animated_Demo.gif" height="400">
 
@@ -43,7 +39,7 @@ Toen hij zag dat het leuk was om te spelen, heeft hij een hele mooie versie gema
 <li>Er zijn muren en voorwerpen die kunnen bewegen, zoals kistjes, sneeuwballen of worstjes</li>
 <li>Je bestuurt meestal 1 figuurtje</li>
 <li>Je ziet het meestal van bovenaf (maar opzij kan ook)</li>
-<li>Graphics zijn meestal vrij eenvoudig; daar draait het niet om</li>
+<li>De graphics zijn meestal vrij eenvoudig; daar draait het niet om</li>
 <li>...</li>
 </ul>
 </details>
@@ -54,7 +50,14 @@ Je hebt misschien veel leuke ideeën voor puzzelspellen. Maar je moet een idee e
 
 Wie was er bij CoderDojo over game design? Toen hebben we al gezien dat het belangrijk is om snel een idee uit te proberen, en dat het op dat moment vooral belangrijk is of het leuk is om te spelen, en minder belangrijk hoe het er uitziet of klinkt.
 
-PuzzleScript ziet er heel eenvoudig uit, maar juist daardoor kun je snel ideeen uitproberen. Het is ontworpen door iemand die zelf ook heel veel puzzelspelletjes gemaakt heeft.
+PuzzleScript ziet er heel eenvoudig uit, maar juist daardoor kun je snel ideeën uitproberen. Het is ontworpen door iemand die zelf ook heel veel puzzelspelletjes gemaakt heeft.
 
+De maker van "A good snowman is hard to build" heeft z'n spel ook eerst ontworpen in PuzzleScript.
+
+<a href='https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745' target='_blank'>ontwerp in PuzzleScript</a>
+
+<img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
+
+Toen hij zag dat het leuk was om te spelen, heeft hij pas de mooie versie die je hierboven zag gemaakt.
 
 ## Ga nu zelf [aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md). Succes!
