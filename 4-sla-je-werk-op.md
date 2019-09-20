@@ -17,9 +17,11 @@ Nu je een aantal dingen hebt aangepast, wil je jouw spel natuurlijk niet zomaar 
 
 ## 1 - Lokaal opslaan (SAVE)
 
-Klik op SAVE links bovenaan de pagina om je werk lokaal op te slaan. Dat wil zeggen dat het op deze laptop in deze browser bewaard wordt. Het is verstandig om dit regelmatig te doen, zodat je geen werk kwijtraakt als bijvoorbeeld de batterij van de laptop leeg is. 
+Klik op SAVE links bovenaan de pagina om je werk lokaal op te slaan. Dat wil zeggen dat het op deze laptop in deze browser bewaard wordt. Het is verstandig om dit regelmatig te doen, zodat je geen werk kwijtraakt als bijvoorbeeld de batterij van de laptop leeg is.
 
 Als je met je eigen laptop werkt, is SAVE de simpelste manier om je werk op te slaan zodat je later verder kunt. Werk je op een leenlaptop, dan zul je het op een andere manier moeten opslaan als je er later verder mee wilt.
+
+**LET OP:** als je de pagina herlaadt, ga je weer terug naar het beginproject. Maar door op "Load" bovenaan te klikken, zie je een lijst met alle versies die je opgeslagen hebt met de datum en tijd erbij. Selecteer de bovenste om je laatst opgeslagen versie terug te krijgen.
 
 ## 2 - De code naar jezelf mailen of opslaan in een bestand
 
@@ -33,7 +35,7 @@ Er zijn nog twee opslagmogelijkheden: SHARE en EXPORT. Die heb je misschien niet
 
 ## 3 - Delen (SHARE)
 
-Het is met PuzzleScript mogelijk om je puzzelspel op te slaan en te delen met anderen via GitHub. Je hebt hiervoor wel een (gratis) GitHub-account nodig (dat kun je <a href='https://github.com/join' target='_blank'>hier</a>) aanvragen).
+Het is met PuzzleScript mogelijk om je puzzelspel op te slaan en te delen met anderen via GitHub. Je hebt hiervoor wel een (gratis) GitHub-account nodig (dat kun je <a href='https://github.com/join' target='_blank'>hier</a> aanvragen).
 
 Klik op SHARE bovenin. PuzzleScript zegt dat je toestemming moet geven voor het delen. Klik op de link die rechtsonderin verschijnt en geef toestemming. Klik dan opnieuw op SHARE en PuzzleScript toont rechtsonderin twee links: een link naar de source code, voor als je er zelf verder mee wilt werken, en een link waar mensen je spel op volledig scherm kunnen spelen.
 

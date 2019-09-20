@@ -14,7 +14,7 @@ Je moet worstjes over grillplaten rollen om ze te bakken, maar ze niet laten ver
 <img alt="Stephen's Sausage Roll" src="images/stephens-sausage-roll.gif" height="400" />
 
 ### Baba is You
-Je kunt als spelende de regels van het spel veranderen zodat je bijvoorbeeld door muren heen kunt lopen.
+Je kunt als spelenr de regels van het spel veranderen zodat je bijvoorbeeld door muren heen kunt lopen.
 
 <img alt="Baba is You" src="images/Baba_is_you_gameplay.gif" height="400" />
 
@@ -49,8 +49,6 @@ Toen hij zag dat het leuk was om te spelen, heeft hij een hele mooie versie gema
 </details>
 
 ## Hoe ontwerp je zo’n spel?
-
-(terugverwijzen naar game design coderdojo)
 
 Je hebt misschien veel leuke ideeën voor puzzelspellen. Maar je moet een idee eerst uitproberen om te weten of het echt een goed idee is.
 

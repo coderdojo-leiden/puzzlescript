@@ -41,7 +41,7 @@ Je kunt je spel hier een naam geven en je eigen naam erbij zetten. Maar in dit g
   <dd>Gebruik een andere kleurenpalet (alle kleuren zien er iets anders uit). Nummer mag 1-14 zijn.</dd>
 
   <dt><code>background_color <em>kleur</em></code></dt>
-  <dd>Gebruk een andere achtergrondkleur voor titelscherm, berichten, etc.</dd>
+  <dd>Gebruik een andere achtergrondkleur voor titelscherm, berichten, etc.</dd>
 
   <dt><code>text_color <em>kleur</em></code></dt>
   <dd>Verandert de tekstkleur.</dd>
