@@ -58,6 +58,6 @@ De maker van "A good snowman is hard to build" heeft z'n spel ook eerst ontworpe
 
 <img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
 
-Toen hij zag dat het leuk was om te spelen, heeft hij pas de mooie versie die je hierboven zag gemaakt.
+Toen hij zag hoe leuk het was om te spelen, heeft hij pas de mooie versie die je hierboven zag gemaakt.
 
 ## Ga nu zelf [aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md). Succes!
