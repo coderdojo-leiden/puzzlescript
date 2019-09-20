@@ -34,7 +34,7 @@ In het spel ziet dit er zo uit:
 
 <img src="images/sprite-player.png" alt="Speler-sprite" />
 
-Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `Speler`, gevolgd door de letter die je hiervoor wilt gebruiken in je levels (`S`). De tweede regel is optioneel; alles wat tussen haakjes staat is commentaar in PuzzleScript. Op de volgende regel kun je een aantal kleuren zetten met spaties ertussen (de lijst kleuren staat hieronder). Daarna volgen vijf regels met 5 tekens per regel die de pixels van het plaatje vormen. Daarbij is `0` de eerste kleur, `1` de tweede, enzovoorts. `.` betekent "geen kleur".
+Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `Speler`, gevolgd door de letter die je hiervoor wilt gebruiken in je levels (`S`). De tweede regel is alleen commentaar en doet verder niets; dit geldt voor alles  in PuzzleScript wat tussen haakjes staat. Op de volgende regel kun je een aantal kleuren zetten met spaties ertussen (de lijst kleuren staat hieronder). Daarna volgen vijf regels met vijf tekens per regel die de pixels van het plaatje vormen. Daarbij is `0` de eerste kleur die je hebt opgegeven, `1` de tweede, enzovoorts. `.` betekent "geen kleur".
 
 (je kunt de laatste 5 regels ook weglaten, zoals bijv. bij `Achtergrond`. Dan krijg je alleen een gekleurd blokje te zien)
 

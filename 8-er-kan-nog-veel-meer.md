@@ -80,10 +80,11 @@ Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Ste
 
 ## Meer informatie
 
+Voor uitwerkingen van veel van de vragen in deze CoderDojo: zie <a href='voorbeelden/voorbeeld2.puzzlescript' target='_blank'>voorbeeld van code na stap 5</a> en <a href='voorbeelden/voorbeeld3.puzzlescript' target='_blank'>voorbeeld van code aan het eind</a>. (sla het bestand op en open het in bijv. Kladblok. Gebruik kopieren en plakken om de code in PuzzleScript uit te proberen)
+
 Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een hoop mogelijkheden die hier niet genoemd zijn.
 
 Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.
-
 
 ## Vragen en antwoorden
 
@@ -104,14 +105,11 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
   </dd>
 
   <dt>Hoe kun je een ander soort vloer maken waar voorwerpen op kunnen staan?</dt>
-  <dd>Je kunt een extra `COLLISIONLAYER` (laag) tussen Achtergrond en Voorwerp maken waar "vloerobjecten" kunnen staan. Objecten op verschillende lagen kunnen op hetzelfde vakje staan, dus een kistje kan bovenop een "vloerobject" staan. Als je een vloerobject `Doel` maakt en je wilt een regel die zegt dat `Kistje`s die op het `Doel` terechtkomen verdwijnen, doe je dat zo:<br/>
+  <dd>Je kunt een extra <code>COLLISIONLAYER</code> (laag) tussen Achtergrond en Voorwerp maken waar "vloerobjecten" kunnen staan. Objecten op verschillende lagen kunnen op hetzelfde vakje staan, dus een kistje kan bovenop een "vloerobject" staan. Als je een vloerobject <code>Doel</code> maakt en je wilt een regel die zegt dat <code>Kistje</code>s die op het <code>Doel</code> terechtkomen verdwijnen, doe je dat zo:<br/>
   <code>[ Kistje Doel ] -> [ Doel ]</code></dd>
 
-  <dt>Kun je knoppen maken die deuren openen?</dt>
-  <dd>Ja, zie bijvoorbeeld <a href="https://www.puzzlescript.net/editor.html?hack=6860122" target='_blank'>Heroes of Sokoban</a>.</dd>
-
   <dt>Hoe kun je het zo maken dat een geduwd kistje doorbeweegt tot het tegen een muur botst?</dt>
-  <dd>Zonder animatie (`Kistje` springt direct naar eindpunt):<br/>
+  <dd>Zonder animatie (<code>Kistje</code> springt direct naar eindpunt):<br/>
   <code>
   [ > Speler | Kistje    ] -> [ Speler | > Kistje ]<br/>
   [ > Kistje | no Object ] -> [        | > Kistje ]
@@ -129,14 +127,12 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
   <dd><code>[ Speler | ... | no Object | Vijand ] -> [ Speler | ... | Vijand | ]</code></dd>
 
   <dt>Kan je een knop maken die deuren opent als de speler of een kistje er op staat?</dt>
-  <dd>Ja, zie <a href="https://stuartspixelgames.com/2016/06/05/checking-multiple-conditions-in-puzzle-script/" target='_blank'>hier.</a></dd>
+  <dd>Ja, zie <a href="https://stuartspixelgames.com/2016/06/05/checking-multiple-conditions-in-puzzle-script/" target='_blank'>hier.</a> Ook in <a href="https://www.puzzlescript.net/editor.html?hack=6860122" target='_blank'>Heroes of Sokoban</a> wordt dit gedaan.</dd>
 
   <dt>Kan je 4 kistjes laten verdwijnen als ze een vierkant vormen?</dt>
-  <dd>Ja, maar dit is wat lastiger, omdat PuzzleScript-regels alleen op 1 rij of kolom werken. Je zou (op een andere laag) een tijdelijk object moeten aanmaken, bijv. <code>TweeKistjesBovenElkaar</code> dat betekent "dit vakje en het vakje eronder bevat een kistje" en dan een regel die checkt op twee <code>TweeKistjesBovenElkaar</code> objecten naast elkaar en er andere tijdelijke objecten van maakt, bijv. <code>VerdwijnendeKistjesBovenElkaar</code>. Als een van de laatste regels zou je alle tijdelijke objecten weer moeten verwijderen.</a></dd>
+  <dd>Ja, maar dit is wat lastiger, omdat PuzzleScript-regels meestal alleen op 1 rij of kolom werken. Je zou (op een andere laag) een tijdelijk object moeten aanmaken, bijv. <code>TweeKistjesBovenElkaar</code> dat betekent "dit vakje en het vakje eronder bevat een kistje" en dan een regel die checkt op twee <code>TweeKistjesBovenElkaar</code> objecten naast elkaar en er andere tijdelijke objecten van maakt, bijv. <code>VerdwijnendeKistjesBovenElkaar</code>. Als een van de laatste regels zou je alle tijdelijke objecten weer moeten verwijderen.</a></dd>
 
   <dt>Kan je bijvoorbeeld een verfbom maken die alle voorwerpen om zich heen een bepaalde kleur geeft?</dt>
   <dd>Ja, op een vergelijkbare manier als de vorige vraag. Je zou bijvoorbeeld eerst in de vakjes links en rechts van de bom een tijdelijk object <code>VerfLinksRechts</code> moeten aanmaken en dan met een volgende regel boven en onder die tijdelijke objecten meer tijdelijke objecten moeten aanmaken, bijv. <code>VerfHoek</code>. Daarna kun je regels maken die de tijdelijke objecten gebruikt om voorwerpen te kleuren, en tot slot verwijder je weer alle tijdelijke objecten.</a></dd>
 
 </dl>
-
-
