@@ -54,7 +54,7 @@ PuzzleScript ziet er heel eenvoudig uit, maar juist daardoor kun je snel ideeën
 
 De maker van "A good snowman is hard to build" heeft z'n spel ook eerst ontworpen in PuzzleScript.
 
-<a href='https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745' target='_blank'>ontwerp in PuzzleScript</a>
+<a href='https://www.puzzlescript.net/play.html?p=2cdfc7d5c5b0fa557745' target='_blank'>(ontwerp in PuzzleScript)</a>
 
 <img alt="Snowman PuzzleScript" src="images/snowman-ps.png" height="400" />
 
