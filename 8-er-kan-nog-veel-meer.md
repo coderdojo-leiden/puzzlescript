@@ -86,6 +86,14 @@ Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Docum
 
 Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.
 
+Hier zijn nog een paar voorbeeldjes van wat je kunt doen met PuzzleScript:
+
+- <a href='voorbeelden/drempel.puzzlescript'>Drempel</a> waar speler overheen kan maar kistjes niet.
+- <a href='voorbeelden/knop-deur.puzzlescript'>Deur en knop</a> die de deur opent als er een speler of kistje op staat.
+- <a href='voorbeelden/twee-karakters.puzzlescript'>Twee karakters</a> in een puzzel, die je ombeurten kunt besturen.
+- <a href='voorbeelden/portals.puzzlescript'>Portals</a> die spelers en kistjes teleporteren.
+- <a href='voorbeelden/spook-speler.puzzlescript'>Spook-speler</a> die door muren en kistjes kan lopen als die een muntje heeft gepakt.
+
 ## Vragen en antwoorden
 
 <dl>
@@ -125,9 +133,6 @@ Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScrip
 
   <dt>Kan je een 'vijand' maken die naar de speler toe beweegt zodra hij die ziet?</dt>
   <dd><code>[ Speler | ... | no Object | Vijand ] -> [ Speler | ... | Vijand | ]</code></dd>
-
-  <dt>Kan je een knop maken die deuren opent als de speler of een kistje er op staat?</dt>
-  <dd>Ja, zie <a href="https://stuartspixelgames.com/2016/06/05/checking-multiple-conditions-in-puzzle-script/" target='_blank'>hier.</a> Ook in <a href="https://www.puzzlescript.net/editor.html?hack=6860122" target='_blank'>Heroes of Sokoban</a> wordt dit gedaan.</dd>
 
   <dt>Kan je 4 kistjes laten verdwijnen als ze een vierkant vormen?</dt>
   <dd>Ja, maar dit is wat lastiger, omdat PuzzleScript-regels meestal alleen op 1 rij of kolom werken. Je zou (op een andere laag) een tijdelijk object moeten aanmaken, bijv. <code>TweeKistjesBovenElkaar</code> dat betekent "dit vakje en het vakje eronder bevat een kistje" en dan een regel die checkt op twee <code>TweeKistjesBovenElkaar</code> objecten naast elkaar en er andere tijdelijke objecten van maakt, bijv. <code>VerdwijnendeKistjesBovenElkaar</code>. Als een van de laatste regels zou je alle tijdelijke objecten weer moeten verwijderen.</a></dd>
