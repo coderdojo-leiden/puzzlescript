@@ -70,4 +70,4 @@ Hier zijn nog een aantal andere hele knappe PuzzleScript-spellen die niet in de 
 
 Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op <a href='https://www.increpare.com/' target='_blank'>zijn website</a>.
 
-## Wat? Er is ook een leveleditor en verborgen opties? [Vertel me meer! >>](8-er-kan-nog-veel-meer.md)
+## Wat? Er is ook een leveleditor en verborgen opties? [Vertel me meer! >>](9-er-kan-nog-veel-meer.md)
