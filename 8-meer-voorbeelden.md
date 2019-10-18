@@ -1,4 +1,4 @@
-### Inhoud
+**Inhoud**
 
 - [Inleiding](index.md)
 - [1 - Aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md)
