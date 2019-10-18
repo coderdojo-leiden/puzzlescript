@@ -112,4 +112,4 @@ Je kunt vast zelf nog meer voorwerpen en regels bedenken om een leuk puzzelspel 
   <details><summary>HINT</summary><code>[ Speler | Schaap | no Voorwerp ] -> [ Speler | | Schaap ]</code></details>
 - Maak een spel waarbij er twee `Speler`s per level zijn. Als twee spelers elkaar raken, verdwijnen ze en kun je het level niet meer oplossen. Je moet het level dus oplossen (bijv. 3 kistjes op een rij krijgen) zonder de spelers elkaar te laten raken.
 
-## Is dat alles wat je met PuzzleScript kan? [Nee, er is nog veel meer! >>](8-er-kan-nog-veel-meer.md)
+## Is dat alles wat je met PuzzleScript kan? [Nee, kijk maar! >>](8-meer-voorbeelden.md)
