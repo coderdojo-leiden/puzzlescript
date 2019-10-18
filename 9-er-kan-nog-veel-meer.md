@@ -1,5 +1,6 @@
 ### Inhoud
 
+- [Inleiding](index.md)
 - [1 - Aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md)
 - [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
@@ -7,9 +8,10 @@
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
 - [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
-- [8 - Er kan nog veel meer](8-er-kan-nog-veel-meer.md)
+- [8 - Meer voorbeelden](8-meer-voorbeelden.md)
+- [9 - Nog niet uitgepuzzeld?](9-er-kan-nog-veel-meer.md)
 
-# 8 - Er kan nog veel meer
+# 9 - Nog niet uitgepuzzeld?
 
 ## Leveleditor
 
@@ -50,8 +52,7 @@ Je kunt je spel hier een naam geven en je eigen naam erbij zetten. Maar in dit g
   <dd>Tekent je spel met horizontale strepen, zodat het er (nog meer) uitziet als een heel ouderwets computerspelletje.</dd>
   
   <dt><code>noaction</code></dt>
-  <dd>Verbergt de regel "X to action" op het titelscherm. De meeste puzzelspellen hebben behalve de pijltjestoetsen geen aparte actietoets,
-  dus dan is deze instructie niet nodig.</dd>
+  <dd>Verbergt de regel "X to action" op het titelscherm. De meeste puzzelspellen hebben behalve de pijltjestoetsen geen aparte actietoets, dus dan is deze instructie niet nodig.</dd>
 
   <dt><code>youtube wygy721nzRc</code></dt>
   <dd>Laat het geluid van een YouTube-video als achtergrondmuziek horen. Let op, dit werkt alleen als je "SHARE" gebruikt, niet in de PuzzleScript-editor. Je moet de unieke "code" van de youtube-video weten. Dit vind je door naar het adres te kijken, bijvoorbeeld `https://www.youtube.com/watch?v=wygy721nzRc`. Het gedeelte na `v=` is de code die je hier moet gebruiken.</dd>
@@ -59,44 +60,28 @@ Je kunt je spel hier een naam geven en je eigen naam erbij zetten. Maar in dit g
   <dt><code>debug<br/>verbose_logging</code></dt>
   <dd>Toon hoe PuzzleScript jouw regels heeft uitgeschreven en hoe ze worden toegepast. Interessant als je beter wilt begrijpen hoe PuzzleScript werkt, of een moeilijk probleem probeert op te lossen.</dd>
 
+  <dt><code>flickscreen <i>WxH</i><br/>zoomscreen <i>WxH</i></code></dt>
+  <dd>Met deze regels zie je steeds maar een deel van elk level. Met <code>flickscreen 5x5</code> wordt je level in 5x5 vierkantjes opgedeeld, en zie je altijd maar 1 van die vierkantjes. Met <code>zoomscreen 5x5</code> zie ook altijd maar 5x5 vakjes en beweegt de 'camera' mee met de speler.</dd>
+
+  <dt><code>run_rules_on_level_start</code></dt>
+  <dd>Soms is het handig als je regels alvast 1x worden toegepast voordat het spel begint. Met deze regel zorg je daar voor.</dd>
+
+  <dt><code>realtime_interval <i>getal</i></code></dt>
+  <dd>Hiermee kun je je spel 'realtime' maken. Gebruik bijvoorbeeld <code>realtime_interval 0.1</code> om je regels 10 keer per seconde toe te passen.</dd>
+
 </dl>
-
-## Voorbeeldspellen
-
-Misschien heb je bovenin al "Load example" zien staan. Bij PuzzleScript zitten een aantal voorbeeldspellen waar je van kunt leren. Sla eerst jouw spel op (SAVE) en selecteer dan een van de spellen uit de lijst om de code te bekijken.
-
-(Let op, jouw code wordt overschreven, maar je kunt altijd terug naar de laatst opgeslagen versie door de bovenste optie bij "Load" te kiezen)
-
-Hier zijn nog een aantal andere hele knappe PuzzleScript-spellen die niet in de lijst voorbeelden staan:
-
-  - <a href='https://www.puzzlescript.net/play.html?p=6847686' target='_blank'>Pac-Man</a>
-  - <a href='https://www.puzzlescript.net/play.html?p=6860122' target='_blank'>Heroes of Sokoban</a>
-  - <a href='https://www.puzzlescript.net/play.html?p=6866423' target='_blank'>Dungeon Janitor</a>
-  - <a href='https://w.itch.io/herding-cats' target='_blank'>Make friends with every cat</a>
-  - <a href='https://rosden.itch.io/islands' target='_blank'>Islands</a>
-
-Een hele verzameling uitdagende puzzelspellen van de maker van PuzzleScript (Stephen Lavelle, bijnaam 'increpare') vind je op <a href='https://www.increpare.com/' target='_blank'>zijn website</a>.
-
-
-## Meer informatie
-
-Voor uitwerkingen van veel van de vragen in deze CoderDojo: zie <a href='voorbeelden/voorbeeld2.puzzlescript' target='_blank'>voorbeeld van code na stap 5</a> en <a href='voorbeelden/voorbeeld3.puzzlescript' target='_blank'>voorbeeld van code aan het eind</a>. (sla het bestand op en open het in bijv. Kladblok. Gebruik kopieren en plakken om de code in PuzzleScript uit te proberen)
-
-Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een hoop mogelijkheden die hier niet genoemd zijn.
-
-Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.
-
-Hier zijn nog een paar voorbeeldjes van wat je kunt doen met PuzzleScript:
-
-- <a href='voorbeelden/drempel.puzzlescript'>Drempel</a> waar speler overheen kan maar kistjes niet.
-- <a href='voorbeelden/knop-deur.puzzlescript'>Deur en knop</a> die de deur opent als er een speler of kistje op staat.
-- <a href='voorbeelden/twee-karakters.puzzlescript'>Twee karakters</a> in een puzzel, die je ombeurten kunt besturen.
-- <a href='voorbeelden/portals.puzzlescript'>Portals</a> die spelers en kistjes teleporteren.
-- <a href='voorbeelden/spook-speler.puzzlescript'>Spook-speler</a> die door muren en kistjes kan lopen als die een muntje heeft gepakt.
 
 ## Vragen en antwoorden
 
 <dl>
+
+  <dt>Zijn er uitwerkingen van de vragen in deze CoderDojo?</dt>
+  <dd>Ja! Voor uitwerkingen van veel van de vragen in deze CoderDojo: zie <a href='voorbeelden/voorbeeld2.puzzlescript' target='_blank'>voorbeeld van code na stap 5</a> en <a href='voorbeelden/voorbeeld3.puzzlescript' target='_blank'>voorbeeld van code aan het eind</a>. (sla het bestand op en open het in bijv. Kladblok. Gebruik kopieren en plakken om de code in PuzzleScript uit te proberen)</dd>
+
+  <dt>Waar vind ik meer informatie over PuzzleScript?</dt>
+  <dd>Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een aantal mogelijkheden die hier niet genoemd zijn.
+
+  Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.</dd>
 
   <dt>Hoe worden PuzzleScript-regels precies uitgevoerd?</dt>
   <dd>Zie <a href="https://www.puzzlescript.net/Documentation/executionorder.html" target='_blank'>hier</a>. Korte samenvatting: regels worden een voor een zo vaak mogelijk toegepast. Zet <code>debug</code> en <code>verbose_logging</code> bovenin om precies te zien hoe het werkt.</dd>

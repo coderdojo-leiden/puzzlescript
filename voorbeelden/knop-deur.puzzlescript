@@ -5,10 +5,7 @@
 )
 
 
-(informatie over ons puzzelspel)
-title Mijn puzzelspel
-author jij
-homepage www.puzzlescript.net
+title Knop en deur
 
 
 ========
@@ -17,16 +14,11 @@ OBJECTS (alle voorwerpen in ons spel, inclusief de speler)
 
 Achtergrond .
 (Zo zien alle lege vakjes er uit)
-darkblue
+darkgreen
 
 Muur #
 (Een vakje waar Speler en Kistje niet kunnen staan)
-darkgray darkbrown darkred
-01210
-10102
-21210
-02101
-12012
+darkgray
 
 Kistje @
 (Een kistje dat de speler kan duwen)
@@ -121,9 +113,6 @@ RULES (de regels van het spel)
 (De Speler kan een Muntje pakken)
 [ > Speler | Muntje ] -> [ > Speler |          ]
 
-(Drie Kistjes op een rij veranderen in Muntjes)
-late [ Kistje | Kistje | Kistje  ] -> [ Muntje | Muntje | Muntje ]
-
 (Open deur als er een voorwerp op de knop staat, sluit 'm anders)
 late [ Knop Voorwerp ] [ Deur ] -> [ Knop Voorwerp ] [ DeurOpen ]
 late [ Knop no Voorwerp ] [ DeurOpen ] -> [ Knop ] [ Deur ]
@@ -133,8 +122,7 @@ late [ Knop no Voorwerp ] [ DeurOpen ] -> [ Knop ] [ Deur ]
 WINCONDITIONS (wanneer win je een level?)
 ==============
 
-(je wint als er geen Kistjes of Muntjes meer zijn)
-no Kistje
+(je wint als er geen Muntjes meer zijn)
 no Muntje
 
 
@@ -142,27 +130,12 @@ no Muntje
 LEVELS (de puzzels die de speler moet oplossen)
 =======
 
+message Als er iets op de knop staat, opent de deur!
+
 ##########
 #S...D..M#
 #.@...#..#
-#.@@..####
+#.MM..####
 #K....#...
 #######...
 
-message Kistjes veranderen in muntjes als je er drie op een rij zet!
-
-#####
-#S..#
-#.@@#
-#.@.#
-#####
-
-message Laat alle kistjes verdwijnen en pak alle muntjes!
-
-#########
-#S....@.#
-#.@@.@..#
-#.@...@##
-#########
-
-message Gefeliciteerd, je hebt gewonnen!

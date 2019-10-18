@@ -1,3 +1,16 @@
+### Inhoud
+
+- [Inleiding](index.md)
+- [1 - Aan de slag met PuzzleScript](1-aan-de-slag-met-puzzlescript.md)
+- [2 - Maak je eigen regels](2-maak-je-eigen-regels.md)
+- [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
+- [4 - Sla je werk op](4-sla-je-werk-op.md)
+- [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
+- [6 - Geluid](6-geluid.md)
+- [7 - Een woord vormen](7-een-woord-vormen.md)
+- [8 - Meer voorbeelden](8-meer-voorbeelden.md)
+- [9 - Nog niet uitgepuzzeld?](9-er-kan-nog-veel-meer.md)
+
 # Een spel gemaakt met PuzzleScript
 
 <img src="images/wat-gaan-we-maken-traag.gif" alt="Sokoban" height="400" />
