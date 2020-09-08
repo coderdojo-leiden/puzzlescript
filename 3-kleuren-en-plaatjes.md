@@ -42,7 +42,21 @@ Zoals je ziet staat op de eerste regel de naam van het voorwerp, in dit geval `S
 
 Deze kleurnamen kun je gebruiken: `black`, `white`, `lightgray`, `gray`, `darkgray`, `red`, `darkred`, `lightred`, `brown`, `darkbrown`, `lightbrown`, `orange`, `yellow`, `green`, `darkgreen`, `lightgreen`, `blue`, `lightblue`, `darkblue`, `purple`, `pink`, `transparent`. Ook hex-codes (als je die toevallig kent van CSS) werken, zoals `#ffff00`.
 
-### Wat je kunt proberen ###
-- Pas de kleuren of de 5x5 pixel plaatjes aan zoals jij wilt.
+Pas de kleuren of de 5x5 pixel plaatjes aan zoals jij wilt!
+
+## Ander verfje
+
+Schilders gebruiken een 'palet' voor de kleuren van het schilderij waar ze aan bezig zijn. **@@@ plaatje van palet?** Ook PuzzleScript heeft een soort palet. Door een ander palet te kiezen, zien alle kleuren er iets anders uit, met een iets andere tint groen, iets andere oranje, etc.
+
+Probeer eens een ander palet: zet bovenin je PuzzleScript-code (waar ook `title` staat) eens deze regel:
+
+    color_palette 1
+
+In plaats van 2 kun je ook andere getallen invullen (1 tot en met 14). Welk palet past het best bij jouw spel?
+
+Het titelscherm en andere tekstschermen hebben normaalgesproken witte tekst op een zwarte achtergrond. Maar deze kleuren kun je ook veranderen! Zet deze regels maar eens bovenaan je PuzzleScript-code:
+
+    background_color darkblue
+    text_color yellow
 
 ## Als je je werk niet kwijt wilt raken, bekijk dan snel [de volgende stap! >>](4-sla-je-werk-op.md)

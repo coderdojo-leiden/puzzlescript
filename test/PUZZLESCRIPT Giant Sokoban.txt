@@ -1,0 +1,255 @@
+title Giant Sokoban
+
+run_rules_on_level_start
+
+========
+OBJECTS
+========
+
+Background .
+darkblue
+
+Wall #
+darkgray gray lightgray white
+32222
+21110
+21110
+21110
+20000
+
+SmallPlayer P
+blue white
+.000.
+01000
+00000
+00000
+.000.
+
+PlayerUL Q
+darkblue blue lightblue
+..222
+.2111
+21111
+21111
+21111
+
+PlayerUR
+darkblue blue lightblue
+222..
+1111.
+11110
+11110
+11110
+
+PlayerLL
+darkblue blue lightblue
+21111
+21111
+21111
+.1111
+..000
+
+PlayerLR
+darkblue blue lightblue
+11110
+11110
+11110
+1110.
+000..
+
+Crate C
+Orange Brown Darkbrown
+00001
+01112
+01.12
+01112
+12222
+
+CrateUL *
+Orange Brown Darkbrown
+00000
+01111
+01.11
+01111
+01111
+
+CrateUR
+Orange Brown Darkbrown
+00001
+11112
+11.12
+11112
+11112
+
+CrateLL
+Orange Brown Darkbrown
+01111
+01111
+01.11
+01111
+12222
+
+CrateLR
+Orange Brown Darkbrown
+11112
+11112
+11.12
+11112
+22222
+
+Target O
+black orange
+00000
+00000
+00100
+00000
+00000
+
+Occupied
+white
+0...0
+.0.0.
+..0..
+.0.0.
+0...0
+
+
+=======
+LEGEND
+=======
+
+D = Crate and Target
+E = CrateUL and Target
+x = Occupied
+
+CratePart  = CrateUL  or CrateUR  or CrateLL  or CrateLR or Crate
+PlayerPart = PlayerUL or PlayerUR or PlayerLL or PlayerLR or SmallPlayer
+Part = CratePart or PlayerPart 
+
+Player = PlayerUL or SmallPlayer
+
+=======
+SOUNDS
+=======
+
+CratePart MOVE 14182707
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Target
+Occupied
+Part, Wall
+
+======
+RULES
+======
+
+
+( LEVEL INITIALIZATION RULES )
+
+( Remove occupied markers )
+[ Occupied ] -> [ ]
+
+( Expand big crate )
+RIGHT [ CrateUL | no CrateUR ] -> [ CrateUL | CrateUR ]
+DOWN  [ CrateUL | no CrateLL ] -> [ CrateUL | CrateLL ]
+DOWN  [ CrateUR | no CrateLR ] -> [ CrateUR | CrateLR ]
+
+( Expand big player )
+RIGHT [ PlayerUL | no PlayerUR ] -> [ PlayerUL | PlayerUR ]
+DOWN  [ PlayerUL | no PlayerLL ] -> [ PlayerUL | PlayerLL ]
+DOWN  [ PlayerUR | no PlayerLR ] -> [ PlayerUR | PlayerLR ]
+ 
+
+( IN-GAME RULES )
+
+( If upperleft of big player moves, all of him moves )
+RIGHT [ MOVING PlayerUL | PlayerUR ] -> [ MOVING PlayerUL | MOVING PlayerUR ]
+DOWN  [ MOVING PlayerUL | PlayerLL ] -> [ MOVING PlayerUL | MOVING PlayerLL ]
+DOWN  [ MOVING PlayerUR | PlayerLR ] -> [ MOVING PlayerUR | MOVING PlayerLR ]
+
+( Player can push crate)
+[ >  PlayerPart | CratePart ] -> [  > PlayerPart | > CratePart  ]
+
+( If any part of crate moves, all of it moves;
+  and crates can push other crates as well ) 
+RIGHT  [ MOVING CrateUL | STATIONARY CrateUR ] -> [ MOVING CrateUL | MOVING CrateUR ]
++DOWN  [ MOVING CrateUL | STATIONARY CrateLL ] -> [ MOVING CrateUL | MOVING CrateLL ]
++DOWN  [ MOVING CrateUR | STATIONARY CrateLR ] -> [ MOVING CrateUR | MOVING CrateLR ]
++LEFT  [ MOVING CrateUR | STATIONARY CrateUL ] -> [ MOVING CrateUR | MOVING CrateUL ]
++UP    [ MOVING CrateLR | STATIONARY CrateUR ] -> [ MOVING CrateLR | MOVING CrateUR ]
++LEFT  [ MOVING CrateLR | STATIONARY CrateLL ] -> [ MOVING CrateLR | MOVING CrateLL ]
++UP    [ MOVING CrateLL | STATIONARY CrateUL ] -> [ MOVING CrateLL | MOVING CrateUL ]
++RIGHT [ MOVING CrateLL | STATIONARY CrateLR ] -> [ MOVING CrateLL | MOVING CrateLR ]
++[ > CratePart | stationary CratePart ] -> [ > CratePart | > CratePart ]
+
+
+( LATE RULES )
+
+( If any part of big crate didn't move, cancel the whole move )
+late RIGHT [ CrateUL | no CrateUR ] -> CANCEL
+late DOWN  [ CrateUL | no CrateLL ] -> CANCEL
+late DOWN  [ CrateUR | no CrateLR ] -> CANCEL
+
+( If any part of big player didn't move, cancel the whole move )
+late RIGHT [ PlayerUL | no PlayerUR ] -> CANCEL
+late DOWN  [ PlayerUL | no PlayerLL ] -> CANCEL
+late DOWN  [ PlayerUR | no PlayerLR ] -> CANCEL
+
+==============
+WINCONDITIONS
+==============
+
+All CratePart on Target
+
+=======
+LEVELS
+=======
+
+message Place all blocks on target squares!
+
+......####..
+......#oo#..
+......#oo#..
+#######..###
+#.p*.*...oo#
+#........oo#
+#oo*.*.....#
+#oo........#
+#####..#####
+....#oo#....
+....#oo#....
+....####....
+
+#########
+#.......#
+#.*..*..#
+#...c...#
+#..cpdoo#
+#.*.ceoo#
+#ooooooo#
+#ooooooo#
+#########
+
+########
+#pd..oo#
+#d*..oo#
+#......#
+#.oo*..#
+#.oo...#
+########
+
+########
+#p.....#
+#.*.c*.#
+#c....c#
+#.c.#..#
+#o.*odo#
+#oooooo#
+#oooooo#
+########
+
+

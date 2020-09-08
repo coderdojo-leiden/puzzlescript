@@ -11,7 +11,7 @@
 - [8 - Meer voorbeelden](8-meer-voorbeelden.md)
 - [9 - Nog niet uitgepuzzeld?](9-er-kan-nog-veel-meer.md)
 
-# 6 - Geluid
+# 6 - Geluid en muziek
 
 ## Maak zelf geluiden en zet ze in het spel
 
@@ -60,5 +60,22 @@ Je kunt ook `SFX1`, `SFX2`, etc. gebruiken als je meer geluiden aan regels wilt 
 - Speel een geluid als de speler probeert te bewegen of duwen maar het lukt niet (bijvoorbeeld omdat die tegen een muur aanloopt). Gebruik hiervoor in plaats van <code>Move</code> het woord <code>CantMove</code> ("can't move" = "kan niet bewegen").
 
 Alle mogelijkheden van geluiden vind je <a href='https://www.puzzlescript.net/Documentation/sounds.html' target='_blank'>hier</a> (in het Engels).
+
+
+## Achtergrondmuziek
+
+Het is ook mogelijk om achtergrondmuziek aan je spel toe te voegen. Je kunt het geluid van een YouTube-video laten spelen tijdens het spel. Als de video is afgelopen, begint die opnieuw. Zoek dus een video uit die alleen muziek bevat, en muziek die goed past bij je spel en niet te snel gaat vervelen.
+
+Let op, de achtergrondmuziek werkt alleen als je "SHARE" gebruikt om je spel met anderen te delen (zie [hoofdstuk 4](4-sla-je-werk-op.md)); het werkt dus niet als je in de editor je spel uitprobeert.
+
+Als je een video uitgezocht hebt, kijk dan naar het adres op YouTube. Dit ziet er bijvoorbeeld zo uit:
+
+    https://www.youtube.com/watch?v=wygy721nzRc
+
+De speciale code `wygy721nzRc` aan het eind van het adres (na `v=`) is wat je nodig hebt om deze muziek aan je spel toe te voegen. Neem die code over en zet 'm bovenaan je PuzzleScript-code (waar bijvoorbeeld ook `title` staat):
+
+    youtube wygy721nzRc
+
+Nogmaals: je moet SHARE gebruiken om de muziek te kunnen horen.
 
 ## Een level waar je je eigen naam moet maken? Check [de volgende stap! >>](7-een-woord-vormen.md)

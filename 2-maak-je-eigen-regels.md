@@ -34,7 +34,7 @@ De eerste regel kun je dus zo lezen: "Als een speler richting een kistje beweegt
 De tweede regel kun je lezen als "Als drie kistjes op een rij staan, vervang ze dan door drie lege plekken."
 
 ### Tips: wijzigingen terugdraaien
-- Als je je PuzzleScript code aan het bewerken bent, kun je je laatste wijzigingen altijd ongedaan maken met Ctrl+Z.
+- Als je je PuzzleScript-code aan het bewerken bent, kun je je laatste wijzigingen altijd ongedaan maken met Ctrl+Z.
 - Als je zorgt dat je je programma regelmatig opslaat (door SAVE te klikken of Ctrl+S te drukken), kun je ook terug naar eerdere opgeslagen versies door ze te selecteren bij de "Load" selectielijst bovenin.
 
 ### Wat je kunt proberen ###
