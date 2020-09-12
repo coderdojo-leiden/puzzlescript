@@ -30,7 +30,7 @@ Een beetje meer beweging brengt leven in de brouwerij! Als voorbeeld maken we ee
 
 Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt tot hij botst wanneer je 'm duwt, of door de computer bestuurde karakters.
 
-## [13 - Grotere levels en de leveleditor](13-wijde-wereld.md)
+## [13 - Grotere levels en de leveleditor](13-grote-levels-editor.md)
 
 Kleine levels zijn leuk, maar misschien wil je meer een avonturenspel maken, waarin je rondloopt in een grotere wereld. Dat kan ook!
 

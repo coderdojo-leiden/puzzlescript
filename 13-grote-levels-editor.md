@@ -6,7 +6,7 @@
 
 # 10 - Grotere levels en de leveleditor
 
-Misschien wil je meer een avonturenspel maken met PuzzleScript, waar de speler door een grote wereld dwaalt, en allerlei mogelijkheden en gevaren tegenkomt.
+Misschien wil je meer een avonturenspel maken met PuzzleScript, waar de speler door een grote wereld dwaalt, en allerlei schatten en gevaren tegenkomt.
 
 Gelukkig zit je niet vast aan de kleine levels die we tot nu toe gemaakt hebben.
 
@@ -72,11 +72,13 @@ Nu zie je nog steeds maar 10 bij 10 vakjes, maar het is net of er een 'camera' i
 
 Natuurlijk hoef je niet 10x10 te gebruiken; je kunt ook meer of minder vakjes tegelijk tonen. Experimenteer er maar mee!
 
+Als je vastloopt, bekijk dan <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>dit voorbeeld</a> eens.
+
 ## Leveleditor
 
-Zulke grote levels tekenen door steeds letters in de code te veranderen, werkt misschien niet zo handig.
+Zulke grote levels tekenen door steeds letters te veranderen in het `LEVELS` gedeelte van de code werkt misschien niet zo handig.
 
-Gelukkig zit er ook een leveleditor ingebouwd in PuzzleScript. Klik op LEVEL EDITOR bovenin om hem te activeren:
+Gelukkig zit er ook een leveleditor ingebouwd in PuzzleScript. Klik op `LEVEL EDITOR` bovenin om hem te activeren:
 
 <img src="images/puzzlescript-header-leveleditor.png" />
 
@@ -87,11 +89,13 @@ Je kunt je level dan bewerken:
 Bovenaan staan alle voorwerpen in het spel. Klik op een voorwerp en dan in het level om dat voorwerp te plaatsen. Rechtsklik om een voorwerp weer te verwijderen.
 
 > **Handig met het toetsenbord?** <br>
-> In plaats van telkens een voorwerp te kiezen met de muis, kun je ook de nummertoetsen gebruiken: 1 selecteert het eerste voorwerp, 2 het tweede, etc.
+> In plaats van telkens een voorwerp te kiezen met de muis, kun je ook de nummertoetsen gebruiken: 1 selecteert het eerste voorwerp, 2 het tweede, enzovoorts.
 
 ### Je level opslaan
 
-**LET OP:** je level wordt NIET automatisch opgeslagen! Als je tevreden bent over je level, klik dan op de witte letter `S` links boven je level. Rechtsonder in het scherm verschijnt de code voor het level. Deze code kun je dan selecteren, kopiëren en daarna plakken in het `LEVELS` gedeelte van je PuzzleScript-code in de linkerhelft van het scherm. Denk erom: als je deze stap vergeet, ben je alle wijzigingen aan je level helaas kwijt!
+**LET OP: je level wordt NIET automatisch opgeslagen!**
+
+Als je tevreden bent over je level, klik dan op de witte letter `S` links boven je level. Rechtsonder in het scherm verschijnt de code voor het level. Deze code kun je dan selecteren, kopiëren en daarna plakken in het `LEVELS` gedeelte van je PuzzleScript-code in de linkerhelft van het scherm. Denk erom: als je deze stap vergeet, ben je alle wijzigingen aan je level kwijt!
 
 ### Je level groter (of kleiner) maken
 
@@ -102,8 +106,3 @@ Als je in de leveleditor je level groter wilt maken, zet de muiscursor dan net o
 Je ziet dan een plusteken verschijnen. Als je nu klikt (met de linkermuisknop), wordt je level 1 vakje groter gemaakt, in dit geval breder. Als je je level hoger wilt maken, doe je hetzelfde maar je houdt de muiscursor onderaan (of bovenaan) je level en klikt als je het plusteken ziet.
 
 Kleiner maken kan ook: klik dan met de rechtermuisknop als je het plusteken ziet, en er verdwijnt een rij vakjes in plaats van dat er een wordt toegevoegd.
-
-
-
-
-- <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>Zoek de schat (meerdere schermen)</a>
