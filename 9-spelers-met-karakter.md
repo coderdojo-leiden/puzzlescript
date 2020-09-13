@@ -147,7 +147,7 @@ Blue Black
 .000.
 ```
 
-(zoals je ziet hebben we alleen achter `SpelerOmlaag` een `S` staan. Een `S` in een level wordt dus een `SpelerOmlaag` object. We hebben geen letters nodig voor de andere richtingen; eentje is genoeg.
+Zoals je ziet hebben we alleen achter `SpelerOmlaag` een `S` staan. Een `S` in een level wordt dus een `SpelerOmlaag` object. We hebben geen letters nodig voor de andere richtingen; eentje is genoeg.
 
 We hebben nu dus vier verschillende objecten voor onze speler. Dit is niet zo handig voor het schrijven van onze regels; we zouden dan elke regel vier keer moeten herhalen om te zorgen dat het met alle vier de richtingen werkt.
 
@@ -180,7 +180,7 @@ Als je er niet uitkomt, is hier de <a target='_blank' href='https://www.puzzlesc
 
 ## Twee trucs combineren?
 
-Als je het leuk vindt, kun je proberen om de twee bovenstaande technieken te combineren: een figuurtje van twee vakjes hoog waaraan je kunt zien welke richting die uitkijkt.
+Als je het leuk vindt, kun je proberen om deze twee technieken te combineren: een figuurtje van twee vakjes hoog waaraan je kunt zien welke richting die uitkijkt.
 
 Hoeveel extra objecten heb je hiervoor nodig denk je? En hoeveel extra regels?
 

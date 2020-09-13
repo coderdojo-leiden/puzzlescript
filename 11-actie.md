@@ -360,7 +360,7 @@ Als je het spel nu probeert, beweegt de vleermuis naar rechts tot die iets raakt
 
     RIGHT [ RIGHT Vleermuis | Object ] -> [ DOWN Vleermuis DOWN BeweegOmlaag | Object ]
 
-Dit is een behoorlijk ingewikkeld regel, zoals je kunt zien. We gaan er stap voor stap doorheen:
+Dit is een behoorlijk ingewikkelde regel, zoals je kunt zien. We gaan er stap voor stap doorheen:
 
 - De eerste `RIGHT` zorgt ervoor dat deze regel maar in 1 richting bekeken wordt; dus alleen voor een `Vleermuis` met een `Object` rechts ervan
 - De tweede `RIGHT` zegt dat de `Vleermuis` naar rechts aan het bewegen moet zijn. Oftewel: hij staat op het punt om tegen het `Object` te botsen.
@@ -375,5 +375,5 @@ Kun jij nu de andere regels invullen, zodat de vleermuis echt in rondjes vliegt?
 Kijk <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=89bc7e7e1785814d2605c210ef86c8bf'>hier</a> als je er niet uitkomt. Als het gelukt is, kun je met de speler het pad van de vleermuis blokkeren en de vleermuis zo helpen om alle vliegen op te eten.
 
 > **Waarom gebruikten we een losse `BeweegRichting`**? <br/><br/>
-> Bij de rollende bal hadden we gewoon vier objecten die de rollende bal voorstelden. Waarom gebruiken we nu dan hulpobjecten op een aparte laag?<br/><br/>
-> Het is hier inderdaad niet nodig, maar het kan wel handig zijn als je het nog mooier wilt maken. Bijvoorbeeld als je verschillende soorten wezens wilt maken die allemaal in een rondje bewegen, maar sommigen zijn vriendelijk en anderen zijn gevaarlijk. Je hoeft dan niet van elk wezen vier versies te maken, plus een heleboel regels voor elk soort wezen, maar kunt de hulpobjecten hergebruiken voor elk wezen.
+> Bij de rollende bal hadden we gewoon vier objecten die de rollende bal voorstelden. Waarom gebruiken we nu dan hulpobjecten op een aparte laag en niet `VleermuisLinks`, `VleermuisOmhoog`, etc.?<br/><br/>
+> De aanpak met hulpobjecten is inderdaad niet nodig, maar kan wel handig zijn als je het nog mooier wilt maken. Bijvoorbeeld als je verschillende soorten wezens wilt maken die allemaal in een rondje bewegen, maar sommige zijn vriendelijk en anderen zijn gevaarlijk. Je hoeft dan niet van elk wezen vier versies te maken, plus een heleboel regels voor elk soort wezen, maar kunt de hulpobjecten hergebruiken voor elk wezen.

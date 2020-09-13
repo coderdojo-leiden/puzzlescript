@@ -81,7 +81,7 @@ Als je het spel draait, zal het konijn de eerste keer dat je tegen 'm aan loopt 
 [ > Speler | Konijn3 ] -> [ Speler | Konijn1 ] message Heb je misschien een wortel voor me?
 </code>
 
-Zoals je ziet maken we bij de tweede regel van <code>Konijn2</code> een <code>Konijn3</code> en bij de derde regel maken we er weer een <code>Konijn1</code> van. Hierdoor kun je het gesprekje nog eens herhalen als je vergeten was wat het konijn ook alweer precies zei.
+Zoals je ziet maken we bij de tweede regel van <code>Konijn2</code> een <code>Konijn3</code> en bij de derde regel maken we er weer een <code>Konijn1</code> van. Hierdoor kun je het gesprekje nog eens herhalen als je vergeten was wat Flappie ook alweer precies zei.
 
 </details>
 
@@ -142,7 +142,6 @@ Met deze regels kunnen we de wortel en het spruitje naar het konijn duwen:
 Misschien is het leuk als het konijn de wortel wel wil maar het spruitje niet:
 
 ```
-(Konijn houdt niet van spruitjes)
 [ > Spruitje | Konijn ] -> [ Spruitje | Konijn ] message Ik hou niet van spruitjes!
 
 (Konijn eet wortel op)
@@ -153,7 +152,6 @@ Hoe zou je het zo kunnen maken dat het konijn je bedankt als je nog eens met hem
 
 <details><summary>OPLOSSING</summary>
 <code>
-(Konijn bedankt de speler voor de wortel)<br/>
 [ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
 </code>
 </details>
@@ -162,7 +160,6 @@ En kun je zorgen dat het konijn genoeg heeft aan 1 wortel en "nee dank je" zegt 
 
 <details><summary>OPLOSSING</summary>
 <code>
-(Konijn hoeft maar 1 wortel)<br/>
 [ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
 </code>
 </details>
@@ -232,9 +229,11 @@ In een echt spel wil je natuurlijk dat het `Konijn` je iets geeft als dank voor 
 
 Maak daarvoor een <code>OBJECT</code> <code>Sleutel</code> aan, voeg 'm toe aan <code>Objects</code> (onder <code>LEGEND</code>) en pas de regel voor het geven van de wortel aan:
 
-<code>
+<p><code>
 [ > Speler > Wortel | Konijn no GevoerdKonijn ] -> [ Speler Sleutel | GevoerdKonijn ]
-</code>
+</code></p>
+
+<p>(<code>Konijn no GevoerdKonijn</code> betekent dat het elk <code>Konijn</code> mag zijn, behalve <code>GevoerdKonijn</code>)</p>
 
 </details>
 
@@ -321,13 +320,15 @@ late [ Knop Voorwerp ] [ Deur ] -> [ Knop Voorwerp ] [ DeurOpen ]
 late [ Knop no Voorwerp ] [ DeurOpen ] -> [ Knop ] [ Deur ]
 ```
 
-(het woordje `late` ("laat") hebben we nodig zodat deze regels toegepast worden nadat het kistje bewogen heeft. Probeer maar eens wat er gebeurd als je dit woordje weglaat)
+Zoals je ziet staan er twee keer rechte haken `[]` links en rechts van de `->`. Zo'n regel kijkt naar meerdere vakjes die waar dan ook in de puzzel kunnen staan. Dus de eerste regel betekent "als er ergens in het level een vakje is met een `Knop` en een `Voorwerp`", en ergens anders in het level is een vakje met een `Deur`, dan moet die `Deur` een `DeurOpen` worden.
 
-Deze regels werken trouwens ook als je meerdere knoppen en deuren hebt. Als alle knoppen ingedrukt worden, gaan de deuren open. Weet je hoe het komt dat het zo werkt?
+Het woordje `late` ("laat") hebben we nodig zodat deze regels toegepast worden nadat het kistje bewogen heeft. Probeer maar eens wat er gebeurd als je dit woordje weglaat.
+
+Deze regels werken ook als je meerdere knoppen en deuren zou hebben. Als alle knoppen ingedrukt worden, gaan alle deuren open. Weet je hoe het komt dat het zo werkt?
 
 <details><summary>ANTWOORD</summary>
 
-De eerste regel opent alle deuren als tenminste 1 knop ingedrukt wordt, maar de tweede regel gooit alle deuren weer dicht als tenminste 1 knop niet ingedrukt wordt. Dus tot alle knoppen ingedrukt zijn, blijven alle deuren dicht.
+De eerste regel opent elke deur als ergens in het level een ingedrukte knop is, maar de tweede regel sluit elke deur weer dicht als ergens in het level een niet ingedrukte knop is. Dus tot alle knoppen ingedrukt zijn, blijven alle deuren dicht.
 </details>
 
 Hier is een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=d745b4dd69fc65d639036b265c50a90e'>werkend voorbeeld</a>.

@@ -46,7 +46,7 @@ White Yellow Orange Red
 
 Het is altijd handig om zo'n serie plaatjes te groeperen. Zet dit bij `LEGEND`:
 
-    Vlam = Vlam1 or Vlam2 or Vlam3 or Vlam4
+    Vlam = Vlam1 or Vlam2 or Vlam3
 
 en voeg `Vlam` ook toe aan `Object`:
 

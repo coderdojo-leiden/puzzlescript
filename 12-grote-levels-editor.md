@@ -41,7 +41,7 @@ m..................x
 mmmmmmmmmmxxxxxxxxxx
 ```
 
-De `x` en `m` overeenkomen met twee verschillende soorten muren. Je kunt bijvoorbeeld dit bij `OBJECTS` zetten:
+De `x` en `m` komen overeen met twee verschillende soorten muren. Je kunt bijvoorbeeld dit bij `OBJECTS` zetten:
 
 ```
 Muur1 x
@@ -72,11 +72,11 @@ Wil je liever dat het scherm 'meeschuift' met elke stap van de speler, zodat de 
 zoomscreen 10x10
 ```
 
-Nu zie je nog steeds maar 10 bij 10 vakjes, maar het is net of er een 'camera' is die meebeweegt met de speler.
+Nu zie je nog steeds maar 10 bij 10 vakjes, maar het is net of de speler gefilmd wordt door een camera die met 'm meebeweegt.
 
 Natuurlijk hoef je niet 10x10 te gebruiken; je kunt ook meer of minder vakjes tegelijk tonen. Experimenteer er maar mee!
 
-Als je vastloopt, bekijk dan <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>dit voorbeeld</a> eens.
+Als je vastloopt, bekijk dan <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>dit voorbeeld</a>.
 
 ## Leveleditor
 
