@@ -5,7 +5,7 @@
 - [9 - Spelers met karakter](9-spelers-met-karakter.md)
 - [10 - Animatie](10-animatie.md)
 - [11 - Actie](11-actie.md)
-- [12 - Grotere levels en editor](12-actie.md)
+- [12 - Grotere levels en editor](12-grote-levels-editor.md)
 - [13 - Op avontuur!](13-op-avontuur.md)
 
 # 9 - Spelers met karakter
