@@ -77,7 +77,7 @@ Als je het spel draait, zal het konijn de eerste keer dat je tegen 'm aan loopt 
 <details><summary>OPLOSSING</summary>
 
 <code>
-[ > Speler | Konijn2 ] -> [ Speler | Konijn3 ] message Ik heb zo'n trek!
+[ > Speler | Konijn2 ] -> [ Speler | Konijn3 ] message Ik heb zo'n trek!<br/>
 [ > Speler | Konijn3 ] -> [ Speler | Konijn1 ] message Heb je misschien een wortel voor me?
 </code>
 
@@ -153,7 +153,7 @@ Hoe zou je het zo kunnen maken dat het konijn je bedankt als je nog eens met hem
 
 <details><summary>OPLOSSING</summary>
 <code>
-(Konijn bedankt de speler voor de wortel)
+(Konijn bedankt de speler voor de wortel)<br/>
 [ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
 </code>
 </details>
@@ -162,7 +162,7 @@ En kun je zorgen dat het konijn genoeg heeft aan 1 wortel en "nee dank je" zegt 
 
 <details><summary>OPLOSSING</summary>
 <code>
-(Konijn hoeft maar 1 wortel)
+(Konijn hoeft maar 1 wortel)<br/>
 [ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
 </code>
 </details>
@@ -413,10 +413,10 @@ Kun jij nu de regels voor het magische drankje schrijven?
 Deze regels heb je nodig:
 
 <code>
-(Als Speler het Drankje drinkt wordt die magisch)
-[ > Speler | Drankje ] -> [ > MagischeSpeler |          ]
-
-(Gewone speler kan zich niet door tralies heen wringen)
+(Als Speler het Drankje drinkt wordt die magisch)<br/>
+[ > Speler | Drankje ] -> [ > MagischeSpeler |          ]<br/>
+<br/>
+(Gewone speler kan zich niet door tralies heen wringen)<br/>
 [ > GewoneSpeler | Tralies ] -> CANCEL
 </code>
 </details>
@@ -426,7 +426,7 @@ Je wilt misschien dat je het drankje maar 1 keer kan gebruiken. Hoe zou je dat i
 <details><summary>ANTWOORD</summary>
 
 <code>
-(Als je door de tralies heen gaat, verlies je je magie weer)
+(Als je door de tralies heen gaat, verlies je je magie weer)<br/>
 [ > MagischeSpeler Tralies |    ] -> [ Tralies | GewoneSpeler ]
 </code>
 </details>
