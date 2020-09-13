@@ -3,12 +3,14 @@
 - [(terug naar het begin)](index.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 - [9 - Spelers met karakter](9-spelers-met-karakter.md)
+- [10 - Animatie](10-animatie.md)
+- [11 - Actie](11-actie.md)
+- [12 - Grotere levels en editor](12-actie.md)
+- [13 - Op avontuur!](13-op-avontuur.md)
 
-# 11 - Animatie & Actie
+# 10 - Animatie
 
-## Animatie
-
-### Frames
+## Frames
 
 Eenvoudige animatie is niets anders dan snel achter elkaar verschillende plaatjes laten zien.
 
@@ -56,7 +58,7 @@ Doordat we de groep `Vlam` hebben aangemaakt, kunnen we die handig gebruiken in 
 
 Zet nu een vlam in je level (`f`) en probeer het spel. Je ziet als het goed is de vlam, maar natuurlijk nog geen animatie. Die gaan we nu toevoegen.
 
-### Regelvolgorde
+## Regelvolgorde
 
 Als eerste poging zou je dit kunnen doen:
 
@@ -72,19 +74,31 @@ Dat komt door de volgorde van de regels: in deze volgorde wordt `Vlam1` in `Vlam
 
 Kun je zelf bedenken hoe je dit probleem zou kunnen oplossen?
 
-Hint: het probleem wordt veroorzaakt door de volgorde van de regels.
+<details><summary>HINT</summary>
+Het probleem wordt veroorzaakt door de volgorde van de regels.
+</details>
 
-(zet de regels in omgekeerde volgorde)
+<details><summary>OPLOSSING</summary>
+Zet de regels in omgekeerde volgorde, zodat ze niet meer achter elkaar op hetzelfde vakje toe te passen zijn.
+</details>
 
 Probeer het opnieuw. Het wordt nu iets beter: met iedere stap die de speler zet, verandert het vlammetje.
 
 Maar wacht, het vlammetje springt nu heen en weer tussen *twee* plaatjes; een van onze frames wordt overgeslagen!
 
+Kun je een oplossing bedenken?
+
+<details><summary>HINT</summary>
+
 Dit probleem lijkt veel op het vorige probleem dat we hadden: de eerste regel verandert `Vlam3` in `Vlam1`, maar de derde regel verandert die `Vlam1` direct weer in `Vlam2`. Dus `Vlam1` wordt nooit getoond.
+</details>
+
+<details><summary>OPLOSSING</summary>
 
 Een eenvoudige manier om dit probleem op te lossen is om een extra plaatje `Vlam4` te maken dat een kopie is van `Vlam1` en de regels uit te breiden met dit extra frame. Dan wordt nog steeds een van de vier frames overgeslagen, maar dat is niet erg, want de drie frames die je oorspronkelijk getekend had, worden netjes getoond.
+</details>
 
-### Realtime
+## Realtime
 
 Eigenlijk willen we natuurlijk liever dat het vlammetje voortdurend verandert, ook als de speler even niet beweegt.
 
@@ -94,7 +108,7 @@ Dat kan door hier een *realtime* ("echte tijd") PuzzleScript-spel van te maken. 
 
 Dit betekent dat tien keer per seconde de regels automatisch worden uitgevoerd. Als je het spel weer draait, zul je zien dat het vlammetje automatisch verandert. Als je het vlammetje sneller of langzamer wilt laten veranderen, pas dan het getal aan. Probeer bijvoorbeeld 0.2 of 0.15.
 
-### Nog net iets mooier...
+## Nog net iets mooier...
 
 *(dit stukje kun je rustig overslaan, maar misschien vind je het interessant)*
 

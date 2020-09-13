@@ -46,7 +46,7 @@ Pas de kleuren of de 5x5 pixel plaatjes aan zoals jij wilt!
 
 ## Ander verfje
 
-Schilders gebruiken een 'palet' voor de kleuren van het schilderij waar ze aan bezig zijn. **@@@ plaatje van palet?** Ook PuzzleScript heeft een soort palet. Door een ander palet te kiezen, zien alle kleuren er iets anders uit, met een iets andere tint groen, iets andere oranje, etc.
+Schilders hebben op hun *palet* alle kleuren van het schilderij waar ze aan bezig zijn. Ook PuzzleScript heeft een soort palet. Door een ander palet te kiezen, zien alle kleuren er iets anders uit, met een iets andere tint groen, iets andere oranje, etc.
 
 Probeer eens een ander palet: zet bovenin je PuzzleScript-code (waar ook `title` staat) eens deze regel:
 

@@ -3,16 +3,20 @@
 - [(terug naar het begin)](index.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 - [9 - Spelers met karakter](9-spelers-met-karakter.md)
+- [10 - Animatie](10-animatie.md)
+- [11 - Actie](11-actie.md)
+- [12 - Grotere levels en editor](12-actie.md)
+- [13 - Op avontuur!](13-op-avontuur.md)
 
-# 14 - Op avontuur!
+# 13 - Op avontuur!
 
 In het [vorige hoofdstuk](13-grote-levels-editor.md) heb je gezien hoe je grotere levels kunt maken. Maar zo'n wijde wereld moet natuurlijk wel gevuld worden met interessante mogelijkheden. Daar gaan we nu mee aan de slag.
 
-Je kunt <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>dit spel </a> met meerdere 'kamers' bijvoorbeeld als beginpunt gebruiken.
+Je kunt <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=637f03e3c4899dec47f2d98b868a80db'>dit spel</a> met meerdere 'kamers' bijvoorbeeld als beginpunt gebruiken.
 
 ## Gesprekjes
 
-Heel belangrijk in een avonturenspel is dat je andere wezens tegenkomt waar je mee kunt praten.
+Het is in een avonturenspel natuurlijk leuk als je andere wezens tegenkomt waar je mee kunt praten.
 
 Misschien komen we wel een konijn tegen:
 
@@ -32,7 +36,7 @@ Het konijn doet natuurlijk nog niets tot we er een regel voor aanmaken. Voeg een
 
     [ > Speler | Konijn ] -> message Ik ben Flappie, wie ben jij?
 
-Als het goed is, stelt Flappie zich nu voor. Het is wel leuk als het konijn meer dan een ding zegt. Dat kunt doen door meerdere konijn-objecten te maken:
+Als het goed is, stelt Flappie zich nu voor. Het is wel leuk als het konijn meer dan een ding zegt. Dat kun je doen door meerdere konijn-objecten te maken:
 
 ```
 Konijn1 K
@@ -70,18 +74,20 @@ Pas nu de regel die hierboven hadden gemaakt als volgt aan:
 
 Als je het spel draait, zal het konijn de eerste keer dat je tegen 'm aan loopt iets zeggen, maar daarna niet meer. Dat komt doordat de regel hierboven er een `Konijn2` van heeft gemaakt. Je moet dus nog regel(s) toevoegen die zorgt dat `Konijn2` ook iets terugzegt. Lukt dat?
 
-Oplossing:
+<details><summary>OPLOSSING</summary>
 
     [ > Speler | Konijn2 ] -> [ Speler | Konijn3 ] message Ik heb zo'n trek!
     [ > Speler | Konijn3 ] -> [ Speler | Konijn1 ] message Heb je misschien een wortel voor me?
 
 Zoals je ziet maken we bij de tweede regel van `Konijn2` een `Konijn3` en bij de derde regel maken we er weer een `Konijn1` van. Hierdoor kun je het gesprekje nog eens herhalen als je vergeten was wat het konijn ook alweer precies zei.
 
-Hier zie je het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=4c7c6ed93d844f701f8eecc462d5c189'>resultaat</a>.
+</details>
+
+Hier zie je het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=3caebd413f61fac7ce77bd60861efc2d'>resultaat</a>.
 
 ## Voorwerpen
 
-Natuurlijk is het leuk als je voorwerpen kunt vinden die je verder kunt helpen.
+Natuurlijk moeten er voorwerpen te vinden zijn in je spel die je verder helpen.
 
 ### Duwen
 
@@ -99,11 +105,11 @@ Orange Green
 0....
 
 Spruitje P
-Darkgreen Green
+Green
 .....
-.010.
-.111.
-.100.
+.000.
+.000.
+.000.
 .....
 
 GevoerdKonijn
@@ -122,7 +128,7 @@ Groente = Wortel or Spruitje
 Objects = Muur or Speler or Konijn or Groente
 ```
 
-Plaats nu een wortel en spruitje in je wereld (met de letters `W` en `P`). Zorg dat je ze naar het konijn kan duwen.
+Plaats nu een wortel en spruitje in je wereld (met de letters `W` en `P`). Plaats ze zo dat het mogelijk is om ze naar het konijn te duwen.
 
 Met deze regels kunnen we de wortel en het spruitje naar het konijn duwen:
 
@@ -143,17 +149,19 @@ Misschien is het leuk als het konijn de wortel wel wil maar het spruitje niet:
 
 Hoe zou je het zo kunnen maken dat het konijn je bedankt als je nog eens met hem praat nadat je 'm gevoerd hebt?
 
-```
-(Konijn bedankt de speler voor de wortel)
-[ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
-```
+<details><summary>OPLOSSING</summary>
+
+    (Konijn bedankt de speler voor de wortel)
+    [ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
+</details>
 
 En kun je zorgen dat het konijn genoeg heeft aan 1 wortel en "nee dank je" zegt als je er nog een aanbiedt?
 
-```
-(Konijn hoeft maar 1 wortel)
-[ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
-```
+<details><summary>OPLOSSING</summary>
+
+    (Konijn hoeft maar 1 wortel)
+    [ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
+</details>
 
 Hier is een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=4c7c6ed93d844f701f8eecc462d5c189'>werkend voorbeeld</a>.
 
@@ -212,13 +220,16 @@ We moeten ook onze regels voor het voeren van het konijn iets aanpassen, omdat d
 [ > Speler | GevoerdKonijn ] -> [ Speler | GevoerdKonijn ] message Dat was lekker, dankjewel!
 ```
 
-Als het niet lukt, kijk dan hier voor een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=b6c1928a337a957321bcfd6a36d3abc4'>werkend voorbeeld</a>.
+Als het niet lukt, kijk dan hier voor een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=1de16dcefbc0c6bee3bd9d9afc4fd634'>werkend voorbeeld</a>.
 
 In een echt spel wil je natuurlijk dat het `Konijn` je iets geeft als dank voor de wortel, zodat je verder kan komen in het spel. Bijvoorbeeld een sleutel. Kun je bedenken hoe je dat doet?
+
+<details><summary>OPLOSSING</summary>
 
 Maak daarvoor een `OBJECT` `Sleutel` aan, voeg 'm toe aan `Objects` (onder `LEGEND`) en pas de regel voor het geven van de wortel aan:
 
     [ > Speler > Wortel | Konijn no GevoerdKonijn ] -> [ Speler Sleutel | GevoerdKonijn ]
+</details>
 
 ## Geheime deuren, knoppen
 
@@ -262,7 +273,7 @@ blue
 .....
 ```
 
-Je kunt de deur natuurlijk ook een geheime deur maken! Pas daarvoor het plaatje aan zodat het er (bijna) hetzelfde uitziet als een muur.
+Je kunt van de deur natuurlijk ook een geheime deur maken! Pas daarvoor het plaatje aan zodat het er (bijna) hetzelfde uitziet als een muur.
 
 Je kunt zelf kiezen waar je deze zaken in je wereld plaatst. Maar we moeten wel de `LEGEND` en `COLLISIONLAYERS` aanpassen. Bij `LEGEND`:
 
@@ -303,9 +314,14 @@ late [ Knop Voorwerp ] [ Deur ] -> [ Knop Voorwerp ] [ DeurOpen ]
 late [ Knop no Voorwerp ] [ DeurOpen ] -> [ Knop ] [ Deur ]
 ```
 
-Dit werkt ook als je meerdere knoppen en deuren hebt. Als alle knoppen ingedrukt worden, gaan de deuren open. Weet je hoe het komt dat het zo werkt?
+(het woordje `late` ("laat") hebben we nodig zodat deze regels toegepast worden nadat het kistje bewogen heeft. Probeer maar eens wat er gebeurd als je dit woordje weglaat)
 
-Antwoord: de eerste regel opent alle deuren als tenminste 1 knop ingedrukt wordt, maar de tweede regel gooit alle deuren weer dicht als tenminste 1 knop niet ingedrukt wordt. Dus tot alle knoppen ingedrukt zijn, blijven alle deuren dicht.
+Deze regels werken trouwens ook als je meerdere knoppen en deuren hebt. Als alle knoppen ingedrukt worden, gaan de deuren open. Weet je hoe het komt dat het zo werkt?
+
+<details><summary>ANTWOORD</summary>
+
+De eerste regel opent alle deuren als tenminste 1 knop ingedrukt wordt, maar de tweede regel gooit alle deuren weer dicht als tenminste 1 knop niet ingedrukt wordt. Dus tot alle knoppen ingedrukt zijn, blijven alle deuren dicht.
+</details>
 
 Hier is een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=d745b4dd69fc65d639036b265c50a90e'>werkend voorbeeld</a>.
 
@@ -313,7 +329,7 @@ Natuurlijk kun je ook een valstrik maken met een (bijna) onzichtbare knop waar d
 
 ## Magische drankjes
 
-Magie is natuurlijk altijd leuk in een avonturenspel. Bijvoorbeeld een drankje waardoor je elastisch wordt en je je jezelf uit een gevangenis kan bevrijden door je door tralies heen te wringen!
+Magie is natuurlijk altijd leuk in een avonturenspel. Bijvoorbeeld een drankje waardoor je elastisch wordt en jezelf door de tralies heen kunt wringen om jezelf uit een gevangenis te bevrijden!
 
 We hebben nu twee spelerobjecten nodig: een `GewoneSpeler` en een `MagischeSpeler`:
 
@@ -329,7 +345,7 @@ darkgray brown lightblue blue
 
 MagischeSpeler
 (De speler, nadat die het drankje gedronken heeft)
-darkgray black
+darkgray
 .000.
 .000.
 00000
@@ -361,17 +377,17 @@ Speler = GewoneSpeler or MagischeSpeler
 Player = Speler
 ```
 
-(`Player = Speler` staat er alleen zodat PuzzleScript, dat overal Engels gebruikt, weet wat onze speler is)
+(`Player = Speler` staat er alleen zodat PuzzleScript, dat overal Engels gebruikt, ook weet wat onze speler is)
 
-We zetten de `Tralies` op een eigen `COLLISIONLAYER`, omdat de `MagischeSpeler` er straks doorheen moet kunnen lopen:
+We zetten de `Tralies` op een eigen `COLLISIONLAYER`, omdat de `MagischeSpeler` straks op hetzelfde vakje moet kunnen staan.
 
 ```
 ================
 COLLISIONLAYERS
 ================
 Achtergrond
-Voorwerp
 Tralies
+Voorwerp
 ```
 
 Als je het drankje drinkt, willen we natuurlijk een magisch geluid laten horen:
@@ -383,6 +399,10 @@ SOUNDS
 Drankje DESTROY 80302508
 ```
 
+Kun jij nu de regels voor het magische drankje schrijven?
+
+<details><summary>ANTWOORD</summary>
+
 Deze regels heb je nodig:
 
 ```
@@ -391,10 +411,16 @@ Deze regels heb je nodig:
 
 (Gewone speler kan zich niet door tralies heen wringen)
 [ > GewoneSpeler | Tralies ] -> CANCEL
-
-(Als je door de tralies heen gaat, verlies je je magie weer)
-[ > MagischeSpeler Tralies |    ] -> [ Tralies | GewoneSpeler ]
 ```
+</details>
 
-Hier is het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=1921649f0225820ff3dd08a1da3111a1'>werkende voorbeeld</a>.
+Je wilt misschien dat je het drankje maar 1 keer kan gebruiken. Hoe zou je dat in een regel kunnen vangen?
+
+<details><summary>ANTWOORD</summary>
+
+    (Als je door de tralies heen gaat, verlies je je magie weer)
+    [ > MagischeSpeler Tralies |    ] -> [ Tralies | GewoneSpeler ]
+</details>
+
+Hier is het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=e2f8386673688e824e0a485d21e4311a'>werkende voorbeeld</a>.
 

@@ -3,8 +3,12 @@
 - [(terug naar het begin)](index.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 - [9 - Spelers met karakter](9-spelers-met-karakter.md)
+- [10 - Animatie](10-animatie.md)
+- [11 - Actie](11-actie.md)
+- [12 - Grotere levels en editor](12-actie.md)
+- [13 - Op avontuur!](13-op-avontuur.md)
 
-# 10 - Grotere levels en de leveleditor
+# 12 - Grotere levels en de leveleditor
 
 Misschien wil je meer een avonturenspel maken met PuzzleScript, waar de speler door een grote wereld dwaalt, en allerlei schatten en gevaren tegenkomt.
 

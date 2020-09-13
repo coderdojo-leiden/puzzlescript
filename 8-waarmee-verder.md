@@ -16,27 +16,27 @@ Je hebt nu de basis van PuzzleScript onder de knie, maar er kan nog veel meer!
 
 Kies hieronder een onderwerp wat je leuk lijkt en klik op het kopje!
 
-## [9 - Spelers met karakter](9-figuurtjes-kleuren.md)
+## [9 - Spelers met karakter](9-spelers-met-karakter.md)
 
 PuzzleScript heeft maar heel simpele plaatjes. Toch is het leuk als je je spelerfiguur wat meer een eigen karakter kunt geven.
 
 Hier leer je hoe je de speler (ietsje) groter kunt maken, en hoe je verschillende plaatjes kunt tonen afhankelijk van welke richting de speler op kijkt.
 
-## [11 - Animatie](11-animatie.md)
+## [10 - Animatie](10-animatie.md)
 
 Een beetje meer beweging brengt leven in de brouwerij! Als voorbeeld maken we een flakkerend vlammetje.
 
-## [12 - Actie!](12-actie.md)
+## [11 - Actie!](11-actie.md)
 
-Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt tot hij botst wanneer je 'm duwt, of door de computer bestuurde karakters.
+Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt wanneer je 'm duwt, of door de computer bestuurde karakters.
 
-## [13 - Grotere levels en de leveleditor](13-grote-levels-editor.md)
+## [12 - Grotere levels en de leveleditor](12-grote-levels-editor.md)
 
 Kleine levels zijn leuk, maar misschien wil je meer een avonturenspel maken, waarin je rondloopt in een grotere wereld. Dat kan ook!
 
-## [14 - Op avontuur!](14-op-avontuur.md)
+## [13 - Op avontuur!](13-op-avontuur.md)
 
-Een grote wereld wil je natuurlijk vullen met interessante mogelijkheden. We kijken naar het voeren van gesprekjes, knoppen en (geheime) deuren en het gebruiken van voorwerpen.
+Een grote wereld wil je natuurlijk vullen met interessante mogelijkheden. We kijken naar het voeren van gesprekjes, het gebruiken van voorwerpen, knoppen en (geheime) deuren en magische drankjes.
 
 
 

@@ -3,8 +3,12 @@
 - [(terug naar het begin)](index.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 - [9 - Spelers met karakter](9-spelers-met-karakter.md)
+- [10 - Animatie](10-animatie.md)
+- [11 - Actie](11-actie.md)
+- [12 - Grotere levels en editor](12-actie.md)
+- [13 - Op avontuur!](13-op-avontuur.md)
 
-# 12 - Actie
+# 11 - Actie
 
 Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar soms wil je dat ook iets gebeurt als de speler stilstaat.
 
@@ -171,15 +175,18 @@ Een ding wat we ook niet moeten vergeten, is om van ons PuzzleScript spel een "r
 
 (Je kunt grotere of kleinere getallen gebruiken, bijvoorbeeld 0.3 of 0.15, om het spel sneller of langzamer te laten gaan)
 
-Probeer het eens uit. Wat gebeurt er nu ls je een bal naar rechts duwt?
+Probeer het eens uit. Wat gebeurt er nu als je een bal naar rechts duwt?
 
 Kun je de regels voor de andere richtingen (links=`LEFT`, omhoog=`UP`, omlaag=`DOWN`) ook toevoegen, zodat je de bal in elke richting kan rollen?
 
-Als je hier een echt spel van wilt maken, heb je natuurlijk nog een `WINCONDITION` nodig. Bijvoorbeeld dat er gaten zijn en je <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=2629d8f2cb707fa72f5ede9f9d7b420b'>alle ballen (of pompoenen) in een gat moet rollen</a>. Je kunt zelf vast nog wel andere wincondities bedenken!
+Als je hier een echt spel van wilt maken, heb je natuurlijk nog een `WINCONDITION` nodig. Bijvoorbeeld dat er gaten zijn en je <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=2629d8f2cb707fa72f5ede9f9d7b420b'>alle ballen (of pompoenen in dit voorbeeld) in een gat moet rollen</a>. Je kunt zelf vast nog wel andere wincondities bedenken!
 
 ## Kunstmatige intelligentie...?
 
 Laten we nu een uit zichzelf bewegend dier maken. Bijvoorbeeld een vleermuis die in het rond vliegt, en jouw hulp nodig heeft om wat sappige vliegen te vangen.
+
+> **WIST JE DAT?**<br/>
+> Vleermuizen kunnen in het aardedonker rondvliegen zonder ergens tegenaan te botsen. Dat doen ze door hele hoge piepgeluiden te maken en met hun grote oren te luisteren naar de echo. Zo 'horen' ze waar ze wel en niet kunnen vliegen, en zelfs waar insecten vliegen die ze kunnen vangen.
 
 We beginnen met een aantal objecten:
 
@@ -292,7 +299,7 @@ message Laat de vleermuis alle vliegen opeten
 
 ```
 
-Als je dit spel draait, beweegt de vleermuis nog niet. Om 'm te laten bewegen kunnen we dezelfde aanpak volgen als bij het rollen van de bal, maar laten we het dit keer net iets anders doen, met een hulpobject dat de richting onthoudt.
+Als je dit spel draait, beweegt de vleermuis nog niet. Om 'm te laten bewegen kunnen we dezelfde aanpak volgen als bij het rollen van de bal, maar laten we het dit keer net iets anders doen, met een hulpobject dat de richting onthoudt. Later leggen we uit waarom dit handig kan zijn.
 
 Voeg de volgende vier hulpobjecten toe aan `OBJECTS`:
 
@@ -312,11 +319,13 @@ BeweegLinks
 transparent
 ```
 
+(`transparent` betekent dat deze objecten doorzichtig (en dus onzichtbaar) zijn)
+
 Voeg dan deze regel toe aan de `LEGEND`, zodat we een groep `BeweegRichting` hebben:
 
     BeweegRichting = BeweegOmhoog or BeweegRechts or BeweegOmlaag or BeweegLinks
 
-`BeweegRichting` komt op z'n eigen laag in het spel, omdat die op hetzelfde vakje als de vleermuis moet kunnen staan. Voeg de laag toe aan `COLLISIONLAYERS`:
+`BeweegRichting` komt op een eigen laag in het spel, omdat die op hetzelfde vakje als de vleermuis moet kunnen staan. Voeg de laag toe aan `COLLISIONLAYERS`:
 
 ```
 ================
@@ -341,7 +350,7 @@ Hier staat dus: "Een vleermuis die nog geen `BeweegRichting` heeft, krijgt het h
 Op zichzelf doet dit nog niets (het hulpobject is onzichtbaar en we hebben nog geen regel die de vleermuis echt in beweging zet). Om de vleermuis in beweging te brengen, voegen we een regel toe:
 
 ```
-(Herstel de bewegingsrichting van de vleermuis op basis van het hulpobject)
+(Zet de bewegingsrichting van de vleermuis op basis van het hulpobject)
 [ Vleermuis BeweegOmhoog ] -> [ UP Vleermuis UP BeweegOmhoog ]
 ```
 
@@ -353,16 +362,18 @@ Als je het spel nu probeert, beweegt de vleermuis naar rechts tot die iets raakt
 
 Dit is een behoorlijk ingewikkeld regel, zoals je kunt zien. We gaan er stap voor stap doorheen:
 
-- De eerste `RIGHT` zorgt ervoor dat deze regel maar in 1 richting bekeken wordt; dus alleen voor een `Vleermuis` met rechts van die vleermuis een `Object`
+- De eerste `RIGHT` zorgt ervoor dat deze regel maar in 1 richting bekeken wordt; dus alleen voor een `Vleermuis` met een `Object` rechts ervan
 - De tweede `RIGHT` zegt dat de `Vleermuis` naar rechts aan het bewegen moet zijn. Oftewel: hij staat op het punt om tegen het `Object` te botsen.
-- Aan de rechterkant van het pijltje `->` staat dat het hulpobject met de richting veranderd moet worden in `BeweegOmlaag`.
+- Aan de rechterkant van het pijltje `->` staat `BeweegOmlaag` zodat dat het nieuwe richting-hulpobject wordt.
 - De eerste keer `DOWN` zorgt ervoor dat de `Vleermuis` omlaag gaat bewegen.
 - De tweede keer `DOWN` zorgt ervoor dat het hulpobject `BeweegOmlaag` tegelijk met de vleermuis omlaag beweegt, zodat ze bij elkaar blijven.
 
 Als je het spel draait, zul je zien dat de vleermuis nu eerst naar rechts beweegt, en als hij ergens tegenaan botst, beweegt hij verder naar beneden.
 
-Kun jij nu de andere regels invullen, zodat de vleermuis echt in rondjes vliegt? Kijk <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=89bc7e7e1785814d2605c210ef86c8bf'>hier</a> als je er niet uitkomt. Als het gelukt is, kun je de vleermuis helpen om alle vliegen op te eten door zijn pad op een slimme manier te blokkeren.
+Kun jij nu de andere regels invullen, zodat de vleermuis echt in rondjes vliegt?
 
-> **Het voordeel van een losse `BeweegRichting`**? <br/><br/>
+Kijk <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=89bc7e7e1785814d2605c210ef86c8bf'>hier</a> als je er niet uitkomt. Als het gelukt is, kun je met de speler het pad van de vleermuis blokkeren en de vleermuis zo helpen om alle vliegen op te eten.
+
+> **Waarom gebruikten we een losse `BeweegRichting`**? <br/><br/>
 > Bij de rollende bal hadden we gewoon vier objecten die de rollende bal voorstelden. Waarom gebruiken we nu dan hulpobjecten op een aparte laag?<br/><br/>
 > Het is hier inderdaad niet nodig, maar het kan wel handig zijn als je het nog mooier wilt maken. Bijvoorbeeld als je verschillende soorten wezens wilt maken die allemaal in een rondje bewegen, maar sommigen zijn vriendelijk en anderen zijn gevaarlijk. Je hoeft dan niet van elk wezen vier versies te maken, plus een heleboel regels voor elk soort wezen, maar kunt de hulpobjecten hergebruiken voor elk wezen.
