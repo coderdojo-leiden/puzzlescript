@@ -90,12 +90,12 @@ Kun je een oplossing bedenken?
 
 <details><summary>HINT</summary>
 
-Dit probleem lijkt veel op het vorige probleem dat we hadden: de eerste regel verandert `Vlam3` in `Vlam1`, maar de derde regel verandert die `Vlam1` direct weer in `Vlam2`. Dus `Vlam1` wordt nooit getoond.
+Dit probleem lijkt veel op het vorige probleem dat we hadden: de eerste regel verandert <code>Vlam3</code> in <code>Vlam1</code>, maar de derde regel verandert die <code>Vlam1</code> direct weer in <code>Vlam2</code>. Dus <code>Vlam1</code> wordt nooit getoond.
 </details>
 
 <details><summary>OPLOSSING</summary>
 
-Een eenvoudige manier om dit probleem op te lossen is om een extra plaatje `Vlam4` te maken dat een kopie is van `Vlam1` en de regels uit te breiden met dit extra frame. Dan wordt nog steeds een van de vier frames overgeslagen, maar dat is niet erg, want de drie frames die je oorspronkelijk getekend had, worden netjes getoond.
+Een eenvoudige manier om dit probleem op te lossen is om een extra plaatje <code>Vlam4</code> te maken dat een kopie is van <code>Vlam1</code> en de regels uit te breiden met dit extra frame. Dan wordt nog steeds een van de vier frames overgeslagen, maar dat is niet erg, want de drie frames die je oorspronkelijk getekend had, worden netjes getoond.
 </details>
 
 ## Realtime

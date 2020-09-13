@@ -64,7 +64,7 @@ Kun je het level oplossen?
 - Wil je terug naar het titelscherm terwijl je een level aan het spelen bent, bijvoorbeeld om overnieuw te beginnen? Druk op Esc.
 - Als je iets hebt aangepast in het programma, kun je in plaats van "RUN" ook op "REBUILD" klikken. Het spel wordt dan niet helemaal opnieuw opgestart, maar bijgewerkt terwijl je in hetzelfde level blijft.
 - Klik regelmatig op SAVE (links bovenaan; Ctrl+S drukken werkt ook) om je programma op te slaan. Dat is wel zo veilig.
-- Misschien heb je de regels die beginnen met `message` al gezien. Je kunt hiermee instructies tonen.
+- Misschien heb je de regels die beginnen met `message` ("boodschap") al gezien. Je kunt hiermee tekst tonen, bijvoorbeeld instructies.
 
 ### Wat je kunt proberen ###
 - Maak het level breder door alle regels langer te maken, of hoger door meer regels toe te voegen.<br/>LET OP: elke regel voor een level moet even lang zijn, anders krijg je een foutmelding wanneer je op RUN klikt.

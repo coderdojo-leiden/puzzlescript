@@ -36,7 +36,7 @@ Het konijn doet natuurlijk nog niets tot we er een regel voor aanmaken. Voeg een
 
     [ > Speler | Konijn ] -> message Ik ben Flappie, wie ben jij?
 
-Als het goed is, stelt Flappie zich nu voor. Het is wel leuk als het konijn meer dan een ding zegt. Dat kun je doen door meerdere konijn-objecten te maken:
+Als het goed is, stelt Flappie zich nu voor. Het is wel leuk als hij meer dan een ding zegt. Dat kun je doen door meerdere konijn-objecten te maken:
 
 ```
 Konijn1 K
@@ -76,10 +76,12 @@ Als je het spel draait, zal het konijn de eerste keer dat je tegen 'm aan loopt 
 
 <details><summary>OPLOSSING</summary>
 
-    [ > Speler | Konijn2 ] -> [ Speler | Konijn3 ] message Ik heb zo'n trek!
-    [ > Speler | Konijn3 ] -> [ Speler | Konijn1 ] message Heb je misschien een wortel voor me?
+<code>
+[ > Speler | Konijn2 ] -> [ Speler | Konijn3 ] message Ik heb zo'n trek!
+[ > Speler | Konijn3 ] -> [ Speler | Konijn1 ] message Heb je misschien een wortel voor me?
+</code>
 
-Zoals je ziet maken we bij de tweede regel van `Konijn2` een `Konijn3` en bij de derde regel maken we er weer een `Konijn1` van. Hierdoor kun je het gesprekje nog eens herhalen als je vergeten was wat het konijn ook alweer precies zei.
+Zoals je ziet maken we bij de tweede regel van <code>Konijn2</code> een <code>Konijn3</code> en bij de derde regel maken we er weer een <code>Konijn1</code> van. Hierdoor kun je het gesprekje nog eens herhalen als je vergeten was wat het konijn ook alweer precies zei.
 
 </details>
 
@@ -150,17 +152,19 @@ Misschien is het leuk als het konijn de wortel wel wil maar het spruitje niet:
 Hoe zou je het zo kunnen maken dat het konijn je bedankt als je nog eens met hem praat nadat je 'm gevoerd hebt?
 
 <details><summary>OPLOSSING</summary>
-
-    (Konijn bedankt de speler voor de wortel)
-    [ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
+<code>
+(Konijn bedankt de speler voor de wortel)
+[ > Speler | GevoerdKonijn ] -> message Dankjewel, dat was lekker!
+</code>
 </details>
 
 En kun je zorgen dat het konijn genoeg heeft aan 1 wortel en "nee dank je" zegt als je er nog een aanbiedt?
 
 <details><summary>OPLOSSING</summary>
-
-    (Konijn hoeft maar 1 wortel)
-    [ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
+<code>
+(Konijn hoeft maar 1 wortel)
+[ > Wortel | GevoerdKonijn ] -> message Ik heb genoeg gehad!
+</code>
 </details>
 
 Hier is een <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=4c7c6ed93d844f701f8eecc462d5c189'>werkend voorbeeld</a>.
@@ -226,9 +230,12 @@ In een echt spel wil je natuurlijk dat het `Konijn` je iets geeft als dank voor 
 
 <details><summary>OPLOSSING</summary>
 
-Maak daarvoor een `OBJECT` `Sleutel` aan, voeg 'm toe aan `Objects` (onder `LEGEND`) en pas de regel voor het geven van de wortel aan:
+Maak daarvoor een <code>OBJECT</code> <code>Sleutel</code> aan, voeg 'm toe aan <code>Objects</code> (onder <code>LEGEND</code>) en pas de regel voor het geven van de wortel aan:
 
-    [ > Speler > Wortel | Konijn no GevoerdKonijn ] -> [ Speler Sleutel | GevoerdKonijn ]
+<code>
+[ > Speler > Wortel | Konijn no GevoerdKonijn ] -> [ Speler Sleutel | GevoerdKonijn ]
+</code>
+
 </details>
 
 ## Geheime deuren, knoppen
@@ -405,21 +412,23 @@ Kun jij nu de regels voor het magische drankje schrijven?
 
 Deze regels heb je nodig:
 
-```
+<code>
 (Als Speler het Drankje drinkt wordt die magisch)
 [ > Speler | Drankje ] -> [ > MagischeSpeler |          ]
 
 (Gewone speler kan zich niet door tralies heen wringen)
 [ > GewoneSpeler | Tralies ] -> CANCEL
-```
+</code>
 </details>
 
 Je wilt misschien dat je het drankje maar 1 keer kan gebruiken. Hoe zou je dat in een regel kunnen vangen?
 
 <details><summary>ANTWOORD</summary>
 
-    (Als je door de tralies heen gaat, verlies je je magie weer)
-    [ > MagischeSpeler Tralies |    ] -> [ Tralies | GewoneSpeler ]
+<code>
+(Als je door de tralies heen gaat, verlies je je magie weer)
+[ > MagischeSpeler Tralies |    ] -> [ Tralies | GewoneSpeler ]
+</code>
 </details>
 
 Hier is het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=e2f8386673688e824e0a485d21e4311a'>werkende voorbeeld</a>.

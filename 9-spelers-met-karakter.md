@@ -186,9 +186,9 @@ Hoeveel extra objecten heb je hiervoor nodig denk je? En hoeveel extra regels?
 
 <details><summary>Klik hier voor het antwoord</summary>
 
-**Objecten:** vier richtingen voor het bovenlichaam en vier voor het onderlichaam, dus acht in totaal.
+<p><b>Objecten:</b> vier richtingen voor het bovenlichaam en vier voor het onderlichaam, dus acht in totaal.</p>
 
-**Regels:** vier extra regels om het bovenlichaam in de juiste richting te zetten en ook vier extra regels voor het onderlichaam, dus samen ook acht.
+<p><b>Regels:</b> vier extra regels om het bovenlichaam in de juiste richting te zetten en ook vier extra regels voor het onderlichaam, dus samen ook acht.</p>
 </details>
 
 Als je er niet uitkomt, kun je <a href='https://www.puzzlescript.net/editor.html?hack=13eafd53caae7e66bc5d2cc027dac9c2'>hier</a> kijken hoe je dit aanpakt.
