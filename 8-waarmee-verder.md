@@ -18,25 +18,45 @@ Kies hieronder een onderwerp wat je leuk lijkt en klik op het kopje!
 
 ## [9 - Spelers met karakter](9-spelers-met-karakter.md)
 
+<img src='images/grotere-speler.png' style='float: right; margin-left: 1em;' />
+
 PuzzleScript heeft maar heel simpele plaatjes. Toch is het leuk als je je spelerfiguur wat meer een eigen karakter kunt geven.
 
 Hier leer je hoe je de speler (ietsje) groter kunt maken, en hoe je verschillende plaatjes kunt tonen afhankelijk van welke richting de speler op kijkt.
 
+<p style='clear:right;'></p>
+
 ## [10 - Animatie](10-animatie.md)
+
+<img src='images/vuurtje.png' style='float: right; margin-left: 1em;' />
 
 Een beetje meer beweging brengt leven in de brouwerij! Als voorbeeld maken we een flakkerend vlammetje.
 
+<p style='clear:right;'></p>
+
 ## [11 - Actie!](11-actie.md)
+
+<img src='images/vleermuis.png' style='float: right; margin-left: 1em;' />
 
 Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt wanneer je 'm duwt, of door de computer bestuurde karakters.
 
+<p style='clear:right;'></p>
+
 ## [12 - Grotere levels en de leveleditor](12-grote-levels-editor.md)
+
+<img src='images/leveleditor-thumbnail.png' style='float: right; margin-left: 1em;' />
 
 Kleine levels zijn leuk, maar misschien wil je meer een avonturenspel maken, waarin je rondloopt in een grotere wereld. Dat kan ook!
 
+<p style='clear:right;'></p>
+
 ## [13 - Op avontuur!](13-op-avontuur.md)
 
+<img src='images/avontuur.png' style='float: right; margin-left: 1em;' />
+
 Een grote wereld wil je natuurlijk vullen met interessante mogelijkheden. We kijken naar het voeren van gesprekjes, het gebruiken van voorwerpen, knoppen en (geheime) deuren en magische drankjes.
+
+<p style='clear:right;'></p>
 
 ## [14 - Meer voorbeelden](14-meer-voorbeelden.md)
 
