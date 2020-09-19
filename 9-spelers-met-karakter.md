@@ -7,6 +7,7 @@
 - [11 - Actie](11-actie.md)
 - [12 - Grotere levels en editor](12-grote-levels-editor.md)
 - [13 - Op avontuur!](13-op-avontuur.md)
+- [14 - Meer voorbeelden](14-meer-voorbeelden.md)
 
 # 9 - Spelers met karakter
 
@@ -191,4 +192,4 @@ Hoeveel extra objecten heb je hiervoor nodig denk je? En hoeveel extra regels?
 <p><b>Regels:</b> vier extra regels om het bovenlichaam in de juiste richting te zetten en ook vier extra regels voor het onderlichaam, dus samen ook acht.</p>
 </details>
 
-Als je er niet uitkomt, kun je <a href='https://www.puzzlescript.net/editor.html?hack=13eafd53caae7e66bc5d2cc027dac9c2'>hier</a> kijken hoe je dit aanpakt.
+Als je er niet uitkomt, kun je <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=13eafd53caae7e66bc5d2cc027dac9c2'>hier</a> kijken hoe je dit aanpakt.

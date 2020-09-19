@@ -38,7 +38,9 @@ Kleine levels zijn leuk, maar misschien wil je meer een avonturenspel maken, waa
 
 Een grote wereld wil je natuurlijk vullen met interessante mogelijkheden. We kijken naar het voeren van gesprekjes, het gebruiken van voorwerpen, knoppen en (geheime) deuren en magische drankjes.
 
+## [14 - Meer voorbeelden](14-meer-voorbeelden.md)
 
+Er is nog meer mogelijk in PuzzleScript! Hier vind je nog een aantal leuke voorbeeldjes en andere mogelijkheden waar je zelf mee aan de slag kunt gaan.
 
 <!---
 
@@ -57,5 +59,11 @@ Misschien ken je het spel Portal, waarbij je twee "poorten" kunt maken die direc
 ## [17 - Nog meer!?](17-nog-meer.md)
 
 Nog een aantal voorbeeldjes en links naar andere interessante PuzzleScript pagina's.
+
+
+
+Schietspel:
+
+https://www.puzzlescript.net/editor.html?hack=b1f354e08755ffd84dbcb9edf251b526
 
 -->

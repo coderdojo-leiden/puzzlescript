@@ -7,6 +7,7 @@
 - [11 - Actie](11-actie.md)
 - [12 - Grotere levels en editor](12-grote-levels-editor.md)
 - [13 - Op avontuur!](13-op-avontuur.md)
+- [14 - Meer voorbeelden](14-meer-voorbeelden.md)
 
 # 11 - Actie
 
