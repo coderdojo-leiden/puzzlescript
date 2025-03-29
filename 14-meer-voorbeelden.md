@@ -141,7 +141,7 @@ Dit gedeelte bovenaan wordt de *Prelude* genoemd. Je kunt je spel hier een naam 
   [ > Speler | Kistje    ] -> [ Speler | > Kistje ]<br/>
   [ > Kistje | no Object ] -> [        | > Kistje ]
   </code><br/>
-  Met animatie: zie volgende vraag.
+  Met animatie: zie <a href='10-animatie.html'>het hoofdstuk over animatie</a>.
   </dd>
 
   <dt>Kan je een 'vijand' maken die naar de speler toe beweegt zodra hij die ziet?</dt>
