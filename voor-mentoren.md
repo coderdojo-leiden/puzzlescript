@@ -4,7 +4,7 @@
 
 Met PuzzleScript kun je eenvoudig logische puzzelspellen maken waarbij je een figuurtje bestuurt en bijvoorbeeld kistjes kunt duwen.
 
-Het is volledig source code gebaseerd. Op https://www.puzzlescript.net/ is een soort IDE met voorbeeldspellen die je kunt bekijken en aanpassen.
+Het is volledig source code gebaseerd. Op [puzzlescript.net](https://www.puzzlescript.net/) is een soort IDE met voorbeeldspellen die je kunt bekijken en aanpassen.
 
 Zie ook de [offici&euml;le documentatie](https://www.puzzlescript.net/Documentation/documentation.html).
 
@@ -303,5 +303,8 @@ Als je wilt dat een knop een deur ergens in het level opent als de speler of een
 
 De knop moet op zijn eigen layer staan.
 
-De knop en de deur hoeven niet in dezelfde rij of kolom van het level te staan; zoals je ziet kun je ook `[ ] [ ]` patronen maken die verschillende plekken in het level aangeven.
+De knop en de deur hoeven niet in dezelfde rij of kolom van het level te staan; zoals je ziet kun je ook
 
+    [ ] [ ]
+
+patronen maken die verschillende plekken in het level aangeven.
