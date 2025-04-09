@@ -3,6 +3,23 @@
 
 @import "{{ site.theme }}";
 
-summary {
-    color: #ff0000;
+details {
+    border: 1px solid #aaa;
+    padding: 0.5em;
+
+    summary::before {
+        content: "➤ ";
+    }
+
+    summary {
+        font-weight: bold;
+    }
+
+}
+
+details[open] {
+    border-color: #000;
+}
+details[open] summary::before {
+    content: "▼ ";
 }
