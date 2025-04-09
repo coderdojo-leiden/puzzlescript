@@ -197,7 +197,7 @@ Als een speler richting een kistje beweegt, wisselen ze van plek.
 
 ### Speler trekt een kistje
 
-    [ < Speler | Kistje ] -> [ < Kistje | < Speler ]
+    [ < Speler | Kistje ] -> [ < Speler | < Kistje ]
 
 Je kunt deze regel natuurlijk ook combineren met het duwen als je wilt.
 
