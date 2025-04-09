@@ -6,6 +6,7 @@
 details {
     //border: 1px solid #aaa;
     padding: 0.5em 0.5em 0.1em 0.5em;
+    cursor: pointer;
 
     summary::before {
         content: "▶ ";
