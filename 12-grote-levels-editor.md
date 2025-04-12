@@ -52,11 +52,11 @@ Muur2 m
 red
 ```
 
-Vergeet niet om alle muren samen in een groep `Muur` te zetten en check of `Muur` in de groep `Object` zit (in het `LEGEND` gedeelte):
+Vergeet niet om alle muren samen in een groep `Muur` te zetten en check of `Muur` in de groep `Voorwerp` (of `Object`) zit (in het `LEGEND` gedeelte):
 
 ```
 Muur = Muur1 or Muur2
-Objects = Speler or Muur
+Voorwerp = Speler or Muur
 ```
 
 Als je het spel nu draait, zie je in een keer de hele 'wereld'. Maar dat is meestal niet zo handig als je wereld zo groot wordt. Liever wil je één kamer tegelijk zien.
@@ -110,4 +110,6 @@ Als je in de leveleditor je level groter wilt maken, zet de muiscursor dan net o
 
 Je ziet dan een plusteken verschijnen. Als je nu klikt (met de linkermuisknop), wordt je level 1 vakje groter gemaakt, in dit geval breder. Als je je level hoger wilt maken, doe je hetzelfde maar je houdt de muiscursor onderaan (of bovenaan) je level en klikt als je het plusteken ziet.
 
-Kleiner maken kan ook: klik dan met de rechtermuisknop als je het plusteken ziet, en er verdwijnt een rij vakjes in plaats van dat er een wordt toegevoegd.
+Kleiner maken kan ook: klik dan met de *rechter*muisknop als je het plusteken ziet, en er verdwijnt een rij vakjes in plaats van dat er een wordt toegevoegd.
+
+## Waarmee vullen we zo'n groot level? [Op avontuur! >>](13-op-avontuur.md)

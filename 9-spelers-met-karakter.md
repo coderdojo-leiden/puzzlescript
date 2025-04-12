@@ -54,7 +54,7 @@ Zie je hoe deze twee plaatjes samen 1 plaatje vormen? Je kunt het misschien bete
 
 Ook al heb je nu een `SpelerBovenkant` object gemaakt, het wordt nog niet gebruikt in het spel. Als je het nu start, heeft de speler alleen een onderlichaam. Hoe lossen we dat op?
 
-Zoals we eerder gezien hebben, moet elk object op een `COLLISIONLAYER` staan. We maken onder de bestaande lagen een nieuwe laag aan voor de `SpelerBovenkant`, want we willen dat die over andere objecten heen getekend kan worden:
+In het gedeelte `COLLISIONLAYER` kun je je spel meerdere lagen geven. Zo kun je zorgen dat sommige objecten met elkaar botsen en andere niet. De `SpelerBovenkant` willen we niet laten botsen met het vakje waarin het getekend wordt (de speler staat niet echt in dat vakje natuurlijk), dus we maken een extra laag aan voor dit object:
 
 ```
 ================
@@ -193,3 +193,5 @@ Hoeveel extra objecten heb je hiervoor nodig denk je? En hoeveel extra regels?
 </details>
 
 Als je er niet uitkomt, kun je <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=13eafd53caae7e66bc5d2cc027dac9c2'>hier</a> kijken hoe je dit aanpakt.
+
+## [Voeg wat beweging toe aan je spel! >>](10-animatie.md)

@@ -300,7 +300,7 @@ message Laat de vleermuis alle vliegen opeten
 
 ```
 
-Als je dit spel draait, beweegt de vleermuis nog niet. Om 'm te laten bewegen kunnen we dezelfde aanpak volgen als bij het rollen van de bal, maar laten we het dit keer net iets anders doen, met een hulpobject dat de richting onthoudt. Later leggen we uit waarom dit handig kan zijn.
+Als je dit spel draait, beweegt de vleermuis nog niet. Om 'm te laten bewegen kunnen we dezelfde aanpak volgen als bij het rollen van de bal, maar laten we het dit keer net iets anders doen, met een *hulpobject* dat de richting onthoudt. Later leggen we uit waarom dit handig kan zijn.
 
 Voeg de volgende vier hulpobjecten toe aan `OBJECTS`:
 
@@ -377,4 +377,6 @@ Kijk <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=89bc
 
 > **Waarom gebruikten we een losse `BeweegRichting`**? <br/><br/>
 > Bij de rollende bal hadden we gewoon vier objecten die de rollende bal voorstelden. Waarom gebruiken we nu dan hulpobjecten op een aparte laag en niet `VleermuisLinks`, `VleermuisOmhoog`, etc.?<br/><br/>
-> De aanpak met hulpobjecten is inderdaad niet nodig, maar kan wel handig zijn als je het nog mooier wilt maken. Bijvoorbeeld als je verschillende soorten wezens wilt maken die allemaal in een rondje bewegen, maar sommige zijn vriendelijk en anderen zijn gevaarlijk. Je hoeft dan niet van elk wezen vier versies te maken, plus een heleboel regels voor elk soort wezen, maar kunt de hulpobjecten hergebruiken voor elk wezen.
+> De aanpak met hulpobjecten is inderdaad niet nodig, maar kan wel handig zijn als je het nog mooier wilt maken. Bijvoorbeeld als je verschillende soorten wezens wilt maken die allemaal in een rondje bewegen, maar sommige zijn vriendelijk en anderen zijn gevaarlijk. Je hoeft dan niet van elk wezen vier versies te maken, plus een heleboel regels voor elk soort wezen, maar kunt dezelfde hulpobjecten hergebruiken voor elk wezen.
+
+## Je kunt ook [grotere levels maken! >>](12-grote-levels-editor.md)

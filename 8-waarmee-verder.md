@@ -16,6 +16,8 @@ Je hebt nu de basis van PuzzleScript onder de knie, maar er kan nog veel meer!
 
 Kies hieronder een onderwerp wat je leuk lijkt en klik op het kopje!
 
+**TIP:** zorg dat je je spel hebt opgeslagen met `SAVE` (`Ctrl`+`S`) voordat je een van de voorbeelden hieronder uitprobeert. Dan kun je later met `Load` terug naar het spel dat je eerder gemaakt had. Je kunt ook meerdere tabbladen met verschillende spellen openen.
+
 ## [9 - Spelers met karakter](9-spelers-met-karakter.md)
 
 <img src='images/grotere-speler.png' style='float: right; margin-left: 1em;' />

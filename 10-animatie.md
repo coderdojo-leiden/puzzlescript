@@ -129,3 +129,4 @@ Er is een andere truc, maar die maakt de animatieregels wat minder leesbaar. Je 
 
 Het complete animatie-voorbeeld vind je <a target="_blank" href="https://www.puzzlescript.net/editor.html?hack=4fc3b3968df8081d290352fec929ba49">hier</a>.
 
+## Maak je spel [realtime! >>](11-actie.md)

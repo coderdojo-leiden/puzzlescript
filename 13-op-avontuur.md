@@ -435,3 +435,4 @@ Je wilt misschien dat je het drankje maar 1 keer kan gebruiken. Hoe zou je dat i
 
 Hier is het <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=e2f8386673688e824e0a485d21e4311a'>werkende voorbeeld</a>.
 
+## Wil je nog meer? [Er *IS* nog meer! >>](14-meer-voorbeelden.md)
