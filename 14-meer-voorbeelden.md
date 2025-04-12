@@ -19,7 +19,7 @@ Elk voorbeeld opent in een nieuw tabblad, dus het overschrijft je eigen spel nie
 
 ### <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=46dc834b710fca005085e07226b6b938'>Twee karakters die je ombeurten kunt besturen</a>
 
-Druk op X om te wisselen tussen twee spelerkarakters. Zo worden je puzzels extra moeilijk.
+Druk op `X` om te wisselen tussen twee spelerkarakters. Zo worden je puzzels extra moeilijk.
 
 ### <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=b8fed376b06397956ec0650c4ad46d28'>Drempel waar speler overheen kan maar kistjes niet</a>
 
@@ -33,7 +33,7 @@ Een *portal* verbindt twee plekken in het level. Spelers en kistjes kunnen door 
 
 ### <a target='_blank' href='https://www.puzzlescript.net/editor.html?hack=7835f8c670f5cc26fd0598e980810b44'>3-op-een-rij spelletje</a>
 
-Een bekend soort spelletje waarbij je steeds drie dezelfde symbolen op een rij moet krijgen om ze te laten verdwijnen. Gebruik de pijltjestoetsen om een symbool te kiezen, druk X om het te selecteren, en druk een richting om het symbool te wisselen met z'n buurman. Wisselen mag alleen als het drie (of meer) op een rij oplevert. 
+Een bekend soort spelletje waarbij je steeds drie dezelfde symbolen op een rij moet krijgen om ze te laten verdwijnen. Gebruik de pijltjestoetsen om een symbool te kiezen, druk `X` om het te selecteren, en druk een richting om het symbool te wisselen met z'n buurman. Wisselen mag alleen als het drie (of meer) op een rij oplevert. 
 
 <img src='images/match3.png' />
 
@@ -43,9 +43,9 @@ Een klassiek soort spelletje waarbij je een ruimteschip bestuurt en boosaardige 
 
 ## Ingebouwde voorbeeldspellen
 
-Misschien heb je bovenin al "Load example" zien staan. Bij PuzzleScript zitten een aantal voorbeeldspellen waar je van kunt leren. Sla eerst jouw spel op (SAVE) en selecteer dan een van de spellen uit de lijst om de code te bekijken.
+Misschien heb je bovenin al "Load example" zien staan. Bij PuzzleScript zitten een aantal voorbeeldspellen waar je van kunt leren. Sla eerst jouw spel op (`SAVE`) en selecteer dan een van de spellen uit de lijst om de code te bekijken.
 
-(Let op, jouw code wordt overschreven, maar je kunt altijd terug naar de laatst opgeslagen versie door de bovenste optie bij "Load" te kiezen)
+(Let op, jouw code wordt overschreven, maar je kunt altijd terug naar de laatst opgeslagen versie door de bovenste optie bij `Load` te kiezen)
 
 ## Voor <i>hardcore</i> PuzzleScripters
 
@@ -110,10 +110,10 @@ Dit gedeelte bovenaan wordt de *Prelude* genoemd. Je kunt je spel hier een naam 
 <dl>
 
   <dt>Zijn er uitwerkingen van de vragen in deze CoderDojo?</dt>
-  <dd>Ja! Voor uitwerkingen van veel van de vragen in deze CoderDojo: zie <a href='voorbeelden/voorbeeld2.puzzlescript' target='_blank'>voorbeeld van code na stap 5</a> en <a href='voorbeelden/voorbeeld3.puzzlescript' target='_blank'>voorbeeld van code aan het eind</a>. (sla het bestand op en open het in bijv. Kladblok. Gebruik kopieren en plakken om de code in PuzzleScript uit te proberen)</dd>
+  <dd>Ja! Voor uitwerkingen van veel van de vragen in deze CoderDojo: zie <a href='voorbeelden/voorbeeld2.puzzlescript' target='_blank'>voorbeeld van code na stap 5</a> en <a href='voorbeelden/voorbeeld3.puzzlescript' target='_blank'>voorbeeld van code na stap 7</a>. (sla het bestand op en open het in bijv. Kladblok. Gebruik kopieren en plakken om de code in PuzzleScript uit te proberen)</dd>
 
   <dt>Waar vind ik meer informatie over PuzzleScript?</dt>
-  <dd>Klik op DOCS bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een aantal mogelijkheden die hier niet genoemd zijn.
+  <dd>Klik op <code>DOCS</code> bovenin om de (Engelse) <a href='https://www.puzzlescript.net/Documentation/documentation.html' target='_blank'>documentatie</a> van PuzzleScript te bekijken. Hierin staan nog een aantal mogelijkheden die hier niet genoemd zijn.
 
   Er zijn ook een aantal stap-voor-stap instructies ("tutorials") voor PuzzleScript. Je vindt ze <a href='https://stuartspixelgames.com/puzzle-script-tutorials/' target='_blank'>hier</a>.</dd>
 
@@ -126,8 +126,8 @@ Dit gedeelte bovenaan wordt de *Prelude* genoemd. Je kunt je spel hier een naam 
   [ > Kistje | Kistje ] -> [ > Kistje | > Kistje ]
   </code></dd>
 
-  <dt>Hoe kun je de actietoets (X) in een spel gebruiken?</dt>
-  <dd>Om bijvoorbeeld alle kistjes naast de speler weg te schuiven als je X drukt:<br/>
+  <dt>Hoe kun je de actietoets (<code>X</code>) in een spel gebruiken?</dt>
+  <dd>Om bijvoorbeeld alle kistjes naast de speler weg te schuiven als je <code>X</code> drukt:<br/>
   <code>[ ACTION Speler | Kistje | no Voorwerp ] -> [ Speler | | Kistje ]</code>
   </dd>
 
