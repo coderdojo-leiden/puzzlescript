@@ -6,7 +6,7 @@
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
-- [6 - Geluid en muziek](6-geluid.md)
+- [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 
@@ -14,9 +14,9 @@
 
 ## Kies je kleuren en teken (hele kleine) plaatjes
 
-PuzzleScript ziet er heel eenvoudig uit: elk vakje heeft maar 5 x 5 pixels. Dat is expres, omdat het belangrijker is om snel idee&euml;n uit te proberen dan om het direct mooi te maken. Als je helemaal tevreden bent met je ontwerp, kun je het uitwerken in een andere programmeertaal met mooie graphics, animaties, geluid en muziek.
+PuzzleScript ziet er heel eenvoudig uit: elk vakje is maar 5 pixels breed en hoog. Dat is expres, omdat het belangrijker is om snel ideeën uit te proberen dan om het direct mooi te maken. Als je helemaal tevreden bent met je ontwerp, kun je het uitwerken in een andere programmeertaal met mooie graphics, animaties, geluid en muziek.
 
-Natuurlijk is het wel belangrijk dat je in PuzzleScript duidelijk ziet wat wat is, anders wordt testen wel erg moeilijk. Daarom kun je simpele plaatjes maken in het `OBJECTS` (voorwerpen) gedeelte.
+Natuurlijk is het wel belangrijk dat je in PuzzleScript duidelijk ziet wat wat is, anders wordt het spel spelen erg moeilijk. Daarom kun je simpele plaatjes maken in het `OBJECTS` (voorwerpen) gedeelte.
 
 In dit gedeelte bepaal je welke voorwerpen je spel heeft en hoe ze er uit zien. Hier is bijvoorbeeld de `Speler`:
 

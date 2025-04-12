@@ -6,7 +6,7 @@
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
-- [6 - Geluid en muziek](6-geluid.md)
+- [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 
@@ -38,7 +38,7 @@ Een beetje meer beweging brengt leven in de brouwerij! Als voorbeeld maken we ee
 
 <img src='images/vleermuis.png' style='float: right; margin-left: 1em;' />
 
-Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt wanneer je 'm duwt, of door de computer bestuurde karakters.
+Een PuzzleScript-level verandert meestal alleen wanneer de speler een stap zet. Maar wat als je andere dingen wilt laten gebeuren? Bijvoorbeeld: een bal die doorrolt wanneer je 'm duwt, of door de computer bestuurde karakters (NPCs).
 
 <p style='clear:right;'></p>
 

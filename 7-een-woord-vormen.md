@@ -6,7 +6,7 @@
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
-- [6 - Geluid en muziek](6-geluid.md)
+- [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 
@@ -97,7 +97,7 @@ Test of alles goed werkt door een level te ontwerpen waarin je de letters C, O, 
 
 ### Wat je kunt proberen ###
 - Duw de letters eens in volgorde `EDOC`, dus `CODE` gespiegeld. Wat gebeurt er? Hoe komt dat, denk je?<br/>
-  Als je geen richting opgeeft, werken regels in alle richtingen. Zet `RIGHT` voor de regel die het woord `CODE` herkent als je wilt dat het alleen van links naar rechts werkt.
+  Als je geen richting opgeeft, werken regels in alle richtingen. Zet `RIGHT` voor de regel die het woord `CODE` herkent als je wilt dat het alleen van links naar rechts werkt. (de andere richtingen zijn `LEFT`, `UP` en `DOWN`)
 - **UITDAGING**: Je kunt nu maar 1 kistje tegelijk duwen. Stel dat je wilt dat je wel meerdere kistjes tegelijk kunt duwen. Heb je enig idee wat voor regel je daarvoor zou moeten toevoegen?
   <details><summary>HINT</summary>Je zou een regel moeten toevoegen die zegt dat het ene kistje het andere kistje in beweging kan brengen, net als een speler een kistje in beweging kan brengen. Dan kan de speler het eerste kistje in beweging brengen, dat kistje kan het volgende kistje in beweging brengen, enzovoorts.</details>
 

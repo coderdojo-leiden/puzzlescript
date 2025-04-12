@@ -6,11 +6,11 @@
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
-- [6 - Geluid en muziek](6-geluid.md)
+- [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 
-# 6 - Geluid en muziek
+# 6 - Geluid
 
 ## Maak zelf geluiden en zet ze in het spel
 
@@ -51,7 +51,7 @@ Je kunt ook `SFX1`, `SFX2`, etc. gebruiken als je meer geluiden aan regels wilt 
 
 ### Wat je kunt proberen ###
 - Kies als je wilt andere geluiden voor het bewegen van een kistje of het winnen van het level.
-- Als je in de vorige stap `Muntje` hebt toegevoegd: speel een geluid als je het muntje oppakt. Gebruik <code>Muntje Destroy <em>nummer</em></code> (destroy = vernietig, want als je het muntje oppakt verdwijnt het in feite)
+- Als je in de vorige stap `Muntje` hebt toegevoegd: speel een geluid als je het muntje oppakt. Gebruik <code>Muntje Destroy <em>nummer</em></code> (destroy = vernietig, want als je het muntje "oppakt" verdwijnt het in feite)
 - Speel voor elke stap die de speler zet een geluid.
   <details><summary>HINT</summary>Gebruik <code>Speler Move</code></details>
 - Speel verschillende geluiden als de speler een kistje duwt of trekt.
@@ -61,7 +61,7 @@ Je kunt ook `SFX1`, `SFX2`, etc. gebruiken als je meer geluiden aan regels wilt 
 Alle mogelijkheden van geluiden vind je <a href='https://www.puzzlescript.net/Documentation/sounds.html' target='_blank'>hier</a> (in het Engels).
 
 
-## Achtergrondmuziek
+<!-- ## Achtergrondmuziek
 
 Het is ook mogelijk om achtergrondmuziek aan je spel toe te voegen. Je kunt het geluid van een YouTube-video laten spelen tijdens het spel. Als de video is afgelopen, begint die opnieuw. Zoek dus een video uit die alleen muziek bevat, en muziek die goed past bij je spel en niet te snel gaat vervelen.
 
@@ -75,6 +75,6 @@ De speciale code `wygy721nzRc` aan het eind van het adres (na `v=`) is wat je no
 
     youtube wygy721nzRc
 
-Nogmaals: je moet SHARE gebruiken om de muziek te kunnen horen.
+Nogmaals: je moet SHARE gebruiken om de muziek te kunnen horen. -->
 
 ## Een level waar je je eigen naam moet maken? Check [de volgende stap! >>](7-een-woord-vormen.md)

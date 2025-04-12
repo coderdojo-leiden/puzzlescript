@@ -6,7 +6,7 @@
 - [3 - Kleuren en plaatjes](3-kleuren-en-plaatjes.md)
 - [4 - Sla je werk op](4-sla-je-werk-op.md)
 - [5 - Nieuwe voorwerpen en winnen](5-nieuwe-voorwerpen-en-winnen.md)
-- [6 - Geluid en muziek](6-geluid.md)
+- [6 - Geluid](6-geluid.md)
 - [7 - Een woord vormen](7-een-woord-vormen.md)
 - [8 - Waarmee wil je verder?](8-waarmee-verder.md)
 
@@ -39,7 +39,7 @@ Voorwerp = Muur or Speler or Kistje or Muntje
   .....<br/>
   </code></details>
 - Zonder extra regels gedraagt je nieuwe voorwerp zich hetzelfde als een `Muur`. Kun je een regel toevoegen die zegt "Als de speler tegen een muntje aanloopt, verdwijnt het muntje"?
-  <details><summary>HINT</summary>Maak een regel die lijkt op de kistjes-duwen regel, maar vervang <code>Kistje</code> door <code>Muntje</code> en laat Muntje rechts van het pijltje helemaal weg.</details>
+  <details><summary>HINT</summary>Maak een regel die lijkt op de kistjes-duwen regel, maar vervang <code>Kistje</code> door <code>Muntje</code>. Laat <code>Muntje</code> rechts van het pijltje helemaal weg (zodat daar dus een leeg vakje staat).</details>
 - Stel dat je drie `Kistje`s op een rij elk in een `Muntje` wilt veranderen in plaats van ze te laten verdwijnen. Heb je een idee hoe je dat kunt aanpakken? Probeer of het werkt.
   <details><summary>HINT</summary>Pas het gedeelte rechts van het pijltje in de tweede regel aan zodat het geen lege vakjes maar vakjes met een <code>Muntje</code> worden.</details>
 
